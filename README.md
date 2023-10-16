@@ -13,4 +13,8 @@
    
    ![Alt text](image.png)
 4. 更新自己的论文阅读部分
-5. 
+5. 创建一个本地分支并推送到创建的新分支xz
+   ```
+   git checkout -b xz
+   ```
+   ![Alt text](image-1.png)
