@@ -18,3 +18,9 @@
    git checkout -b xz
    ```
    ![Alt text](image-1.png)
+   ![Alt text](image-2.png)
+   ![Alt text](image-3.png)
+6. 切换到主分支合并代码
+   ```
+   git checkout master
+   ```
