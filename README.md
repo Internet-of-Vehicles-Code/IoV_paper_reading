@@ -1,6 +1,9 @@
 # IoV_paper_reading
 
-本项目用于记录相关文献的阅读
+本项目用于记录相关文献的阅读。
+
+People working on the paper reading program:
+- [Zheng Xue](./Xuezheng/paper_reading_xz.md)
 
 ## 使用指南
 1. 安装[Git](https://git-scm.com/)
