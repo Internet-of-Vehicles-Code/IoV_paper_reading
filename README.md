@@ -2,6 +2,8 @@
 
 本项目用于记录相关文献的阅读。
 
+Our mission is to promote the security of Internet of Vehicles and autonomous driving.
+
 People working on the paper reading program:
 - [Zheng Xue](./Xuezheng/paper_reading_xz.md)
 
