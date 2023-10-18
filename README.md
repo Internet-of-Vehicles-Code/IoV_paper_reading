@@ -15,17 +15,8 @@ People working on the paper reading program:
    
 2. 克隆本项目
    ```
-   git clone https://github.com/Internet-of-Vehicles-Code/IoV_paper_reading.git
+   git clone git@github.com:Internet-of-Vehicles-Code/IoV_paper_reading.git
    ```
-   (如果是手动下载，需要先初始化仓库
-   ```
-   git init
-   ```
-   随后建立分支，push前需要建立和远程仓库的链接
-   ```
-   git remote add origin https://github.com/Internet-of-Vehicles-Code/IoV_paper_reading.git
-   ```
-   )
 3. 新建自己的文件夹及对应的markdown文件
    
    ![Alt text](./images/image.png)
