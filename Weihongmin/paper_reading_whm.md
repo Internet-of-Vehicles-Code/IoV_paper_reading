@@ -1,9 +1,9 @@
 # Paper-Reading
 Paper reading list in Cooperative perception. This repository will keep updating ... 🤗
 
-## Journals
+## Authentication
 
-### Authentication
+### Journals
 - Z. Wang et al., "An Anonymous and Revocable Authentication Protocol for Vehicle-to-Vehicle Communications," in IEEE Internet of Things Journal, vol. 10, no. 6, pp. 5114-5127, 15 March15, 2023, doi: 10.1109/JIOT.2022.3222469. [[paper]](https://ieeexplore.ieee.org/document/9953072)
 
 - S. Bojjagani, Y. C. A. P. Reddy, T. Anuradha, P. V. V. Rao, B. R. Reddy and M. K. Khan, "Secure Authentication and Key Management Protocol for Deployment of Internet of Vehicles (IoV) Concerning Intelligent Transport Systems," in IEEE Transactions on Intelligent Transportation Systems, vol. 23, no. 12, pp. 24698-24713, Dec. 2022, doi: 10.1109/TITS.2022.3207593. [[paper]](https://ieeexplore.ieee.org/document/9905232)
@@ -94,6 +94,42 @@ Paper reading list in Cooperative perception. This repository will keep updating
   - 预备知识：物理不可克隆函数。
   - 本文基于物理不可克隆函数提出了一种高效的车联网认证协议。
 
+### Conferences
+- S. Son, M. Kim and Y. Park, "A Lightweight Seamless Authentication Scheme for Edge-Assisted IoV networks," 2023 Fourteenth International Conference on Ubiquitous and Future Networks (ICUFN), Paris, France, 2023, pp. 305-310, doi: 10.1109/ICUFN57995.2023.10200823. [[paper]](https://ieeexplore.ieee.org/document/10200823)
+  - 提出了初始认证、重新认证和移交认证三种情况下的认证方案。
+  - 在初始认证阶段使用Chebyshev混沌映射来降低计算成本。
+
+- F. Yu, M. Ma and X. Li, "A Blockchain-Assisted Seamless Handover Authentication for V2I Communication in 5G Wireless Networks," ICC 2021 - IEEE International Conference on Communications, Montreal, QC, Canada, 2021, pp. 1-6, doi: 10.1109/ICC42927.2021.9500334. [[paper]](https://ieeexplore.ieee.org/document/9500334)
+  - （切换认证）
+
+
+
+## Sybil Attack Detection
+### Overview
+- M. M. Hamdi, M. Dhafer, A. S. Mustafa, S. A. Rashid, A. J. Ahmed and A. M. Shantaf, "Effect Sybil attack on security Authentication Service in VANET," 2022 International Congress on Human-Computer Interaction, Optimization and Robotic Applications (HORA), Ankara, Turkey, 2022, pp. 1-6, doi: 10.1109/HORA55278.2022.9799810. [[paper]](https://ieeexplore.ieee.org/document/9799810)
+
+- S. Kumar, A. Vasudeva and M. Sood, "Sybil Attack Countermeasures in Vehicular Ad Hoc Networks," 2022 International Conference on Communications, Information, Electronic and Energy Systems (CIEES), Veliko Tarnovo, Bulgaria, 2022, pp. 1-6, doi: 10.1109/CIEES55704.2022.9990799. [[paper]](https://ieeexplore.ieee.org/document/9990799)
+
+- H. Yang et al., "An Overview of Sybil Attack Detection Mechanisms in VFC," 2022 52nd Annual IEEE/IFIP International Conference on Dependable Systems and Networks Workshops (DSN-W), Baltimore, MD, USA, 2022, pp. 117-122, doi: 10.1109/DSN-W54100.2022.00028. [[paper]](https://ieeexplore.ieee.org/document/9833826)
+
+- Douceur, J.R. (2002). The Sybil Attack. In: Druschel, P., Kaashoek, F., Rowstron, A. (eds) Peer-to-Peer Systems. IPTPS 2002. Lecture Notes in Computer Science, vol 2429. Springer, Berlin, Heidelberg. [[paper]](https://link.springer.com/chapter/10.1007/3-540-45748-8_24)
+  - Sybil 提出。
+
+
+### Conference
+- B. Liu, J. Cai and J. Liu, "RSSI-Based Sybil Attack Detection Under Fading Channel in VANET," ICC 2023 - IEEE International Conference on Communications, Rome, Italy, 2023, pp. 5879-5884, doi: 10.1109/ICC45041.2023.10279536. [[paper]](https://ieeexplore.ieee.org/document/10279536)
+  - 针对VANET中衰落信道和节点高度移动性的特点，提出了一种改进的基于RSSI的Sybil攻击检测方法。
+  - 首先通过**最大似然估计**估计各通信节点之间的距离，然后通过**均值漂移聚类算法**检测sybil节点。
+  - 通过合理设置均值漂移算法的检测时间和搜索半径，本文提出的算法在VANET中对sybil攻击的检测具有较高的准确性。
+  - 基于Rayleigh分布，使用RSU对车辆进行检测，讨论了RSSI样本数对距离估计的影响。
+  - MATLAB仿真，允许两车最小距离为5米。
+
+- Maleknasab Ardakani, M., Tabarzad, M.A. & Shayegan, M.A. Detecting sybil attacks in vehicular ad hoc networks using fuzzy logic and arithmetic optimization algorithm. J Supercomput 78, 16303–16335 (2022). [[paper]](https://link.springer.com/article/10.1007/s11227-022-04526-z#citeas)
+
+- A. Afdhal, A. Ahmadiar and R. Adriman, "Sybil Attack Detection on ITS-V2X System using a Realistic Traffic Model-based Approach," 2022 IEEE International Conference on Communication, Networks and Satellite (COMNETSAT), Solo, Indonesia, 2022, pp. 333-338, doi: 10.1109/COMNETSAT56033.2022.9994541. [[paper]](https://ieeexplore.ieee.org/document/9994541/authors#authors)
+
+- Q. Hu, X. Fan, A. Shan and Z. Wang, "Sybil Attack Detection Method based on Timestamp-Chain in Internet of Vehicles," 2021 IEEE International Conference on Smart Internet of Things (SmartIoT), Jeju, Korea, Republic of, 2021, pp. 174-178, doi: 10.1109/SmartIoT52359.2021.00035. [[paper]](https://ieeexplore.ieee.org/document/9556187)
+  - 时戳链、邻居列表。
 
 ### Other
 - Q. Yu, J. Ren, Y. Fu, Y. Li and W. Zhang, "Cybertwin: An Origin of Next Generation Network Architecture," in IEEE Wireless Communications, vol. 26, no. 6, pp. 111-117, December 2019, doi: 10.1109/MWC.001.1900184. [[paper]](https://ieeexplore.ieee.org/document/8910636)  
@@ -126,14 +162,10 @@ Paper reading list in Cooperative perception. This repository will keep updating
   - 提出了一种基于深度学习的IDS，该IDS最初使用区块链方案的认证数据，并以无监督的学习方式使用AR-DVAE技术提取代表性特征。提取的特征被提议的A-BLSTM技术用于检测入侵。
 
 
-## Conferences
-### Authentication
-- S. Son, M. Kim and Y. Park, "A Lightweight Seamless Authentication Scheme for Edge-Assisted IoV networks," 2023 Fourteenth International Conference on Ubiquitous and Future Networks (ICUFN), Paris, France, 2023, pp. 305-310, doi: 10.1109/ICUFN57995.2023.10200823. [[paper]](https://ieeexplore.ieee.org/document/10200823)
-  - 提出了初始认证、重新认证和移交认证三种情况下的认证方案。
-  - 在初始认证阶段使用Chebyshev混沌映射来降低计算成本。
 
-- F. Yu, M. Ma and X. Li, "A Blockchain-Assisted Seamless Handover Authentication for V2I Communication in 5G Wireless Networks," ICC 2021 - IEEE International Conference on Communications, Montreal, QC, Canada, 2021, pp. 1-6, doi: 10.1109/ICC42927.2021.9500334. [[paper]](https://ieeexplore.ieee.org/document/9500334)
-  - （切换认证）
+
+
+
 
 ### Other
 - A. Kumar and D. Das, "EIoVChain: Towards Authentication and Secure Communication Based Blockchain for Internet of Vehicles (IoV)," 2021 IEEE International Conference on Blockchain (Blockchain), 2021, pp. 47-54, doi: 10.1109/Blockchain53845.2021.00018. [[paper]](https://ieeexplore.ieee.org/document/9680517)
