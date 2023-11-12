@@ -3,6 +3,23 @@ Paper reading list in Cooperative perception. This repository will keep updating
 
 ## Authentication
 
+### Survery
+- S. Dong, H. Su, Y. Xia, F. Zhu, X. Hu and B. Wang, "A Comprehensive Survey on Authentication and Attack Detection Schemes That Threaten It in Vehicular Ad-Hoc Networks," in IEEE Transactions on Intelligent Transportation Systems, doi: 10.1109/TITS.2023.3297527. [[paper]](https://ieeexplore.ieee.org/abstract/document/10201386)
+
+- Nath, H.J., Choudhury, H. Privacy-Preserving Authentication Protocols in Vanet. SN COMPUT. SCI. 4, 589 (2023). [[paper]](https://doi.org/10.1007/s42979-023-02122-3)
+
+- Pravin Mundheet al.,, "A comprehensive survey on authentication and privacy-preserving schemes in VANETs," in Computer Science Review, Vol. 41, 2021, 100411, ISSN 1574-0137. [[paper]](https://www.sciencedirect.com/science/article/pii/S1574013721000514)
+
+- S. A. Jan, N. U. Amin, M. Othman, M. Ali, A. I. Umar and A. Basir, "A Survey on Privacy-Preserving Authentication Schemes in VANETs: Attacks, Challenges and Open Issues," in IEEE Access, vol. 9, pp. 153701-153726, 2021, doi: 10.1109/ACCESS.2021.3125521. [[paper]](https://ieeexplore.ieee.org/abstract/document/9600861)
+
+- D. Manivannan et al., "Secure authentication and privacy-preserving techniques in Vehicular Ad-hoc NETworks (VANETs)," in Vehicular Communications, Vol. 25, October 2020, 100247. [[paper]](https://www.sciencedirect.com/science/article/pii/S2214209620300188)
+
+- Ikram Ali et al., "Authentication and privacy schemes for vehicular ad hoc networks (VANETs): A survey," in Vehicular Communications, Vol. 16, April 2019, Pages 45-61. [[paper]](https://www.sciencedirect.com/science/article/pii/S221420961830319X)
+
+- Sunilkumar S. Manvi et al., "A survey on authentication schemes in VANETs for secured communication," in Vehicular Communications, vol. 9, July 2017, Pages 19-30. [[paper]](https://www.sciencedirect.com/science/article/pii/S2214209616300018#ab0010)
+
+
+
 ### Journals
 - Z. Wang et al., "An Anonymous and Revocable Authentication Protocol for Vehicle-to-Vehicle Communications," in IEEE Internet of Things Journal, vol. 10, no. 6, pp. 5114-5127, 15 March15, 2023, doi: 10.1109/JIOT.2022.3222469. [[paper]](https://ieeexplore.ieee.org/document/9953072)
 
@@ -95,6 +112,11 @@ Paper reading list in Cooperative perception. This repository will keep updating
   - 本文基于物理不可克隆函数提出了一种高效的车联网认证协议。
 
 ### Conferences
+- N. Pathak and P. R. Patil, "Securing VANET Communication Using Block Chain: A Review," 2023 International Conference on Communication System, Computing and IT Applications (CSCITA), Mumbai, India, 2023, pp. 215-218, doi: 10.1109/CSCITA55725.2023.10105098. [[paper]](https://ieeexplore.ieee.org/abstract/document/10105098)
+
+- R. Boutahala, H. Fouchal, M. Ayaida and S. Mao, "Light and Efficient Authentication Mechanism for Connected Vehicles Using Unsupervised Detection," ICC 2023 - IEEE International Conference on Communications, Rome, Italy, 2023, pp. 329-333, doi: 10.1109/ICC45041.2023.10279812. [[paper]](https://ieeexplore.ieee.org/document/10279812)
+  - 当车辆信任邻居时，它们会与未签名的消息进行通信。当信任无法得到保证时，车辆将切换到标准通信，直到信任恢复。为了达到信任，每辆车都会计算自己对邻居行为的预测。基于轨迹，速度。使用运行 LTSM 算法的自动编码器执行预测。
+
 - S. Son, M. Kim and Y. Park, "A Lightweight Seamless Authentication Scheme for Edge-Assisted IoV networks," 2023 Fourteenth International Conference on Ubiquitous and Future Networks (ICUFN), Paris, France, 2023, pp. 305-310, doi: 10.1109/ICUFN57995.2023.10200823. [[paper]](https://ieeexplore.ieee.org/document/10200823)
   - 提出了初始认证、重新认证和移交认证三种情况下的认证方案。
   - 在初始认证阶段使用Chebyshev混沌映射来降低计算成本。
@@ -116,7 +138,7 @@ Paper reading list in Cooperative perception. This repository will keep updating
   - Sybil 提出。
 
 
-### Conference
+### Conferences
 - B. Liu, J. Cai and J. Liu, "RSSI-Based Sybil Attack Detection Under Fading Channel in VANET," ICC 2023 - IEEE International Conference on Communications, Rome, Italy, 2023, pp. 5879-5884, doi: 10.1109/ICC45041.2023.10279536. [[paper]](https://ieeexplore.ieee.org/document/10279536)
   - 针对VANET中衰落信道和节点高度移动性的特点，提出了一种改进的基于RSSI的Sybil攻击检测方法。
   - 首先通过**最大似然估计**估计各通信节点之间的距离，然后通过**均值漂移聚类算法**检测sybil节点。
@@ -131,7 +153,10 @@ Paper reading list in Cooperative perception. This repository will keep updating
 - Q. Hu, X. Fan, A. Shan and Z. Wang, "Sybil Attack Detection Method based on Timestamp-Chain in Internet of Vehicles," 2021 IEEE International Conference on Smart Internet of Things (SmartIoT), Jeju, Korea, Republic of, 2021, pp. 174-178, doi: 10.1109/SmartIoT52359.2021.00035. [[paper]](https://ieeexplore.ieee.org/document/9556187)
   - 时戳链、邻居列表。
 
-### Other
+
+
+## Other
+### Journals
 - Q. Yu, J. Ren, Y. Fu, Y. Li and W. Zhang, "Cybertwin: An Origin of Next Generation Network Architecture," in IEEE Wireless Communications, vol. 26, no. 6, pp. 111-117, December 2019, doi: 10.1109/MWC.001.1900184. [[paper]](https://ieeexplore.ieee.org/document/8910636)  
   - 提出了一种基于Cybertwin的四层网络架构：Core Cloud、Edge Cloud、Cybertwin、Ends。
   - 作为虚拟网络空间中人或物的数字表示Cybertwin主要具有3个功能：通信助手、网络行为记录器和数字资产所有者。
@@ -163,11 +188,10 @@ Paper reading list in Cooperative perception. This repository will keep updating
 
 
 
+### Conference
+- H. Bao, X. Zhang, G. Wang, M. Zhang, Y. Wang and Y. Zhao, "RepuFilter: Prevention of Untrusted Packet Spread Based on Trust Evaluation in Wireless Networks," ICC 2023 - IEEE International Conference on Communications, Rome, Italy, 2023, pp. 5972-5977, doi: 10.1109/ICC45041.2023.10278691. [[paper]](https://ieeexplore.ieee.org/document/10278691) 
+  - 提出了一种基于网络用户之间信任评估的传递性的动态信任评估模型，并将该模型应用于数据包过滤。
 
-
-
-
-### Other
 - A. Kumar and D. Das, "EIoVChain: Towards Authentication and Secure Communication Based Blockchain for Internet of Vehicles (IoV)," 2021 IEEE International Conference on Blockchain (Blockchain), 2021, pp. 47-54, doi: 10.1109/Blockchain53845.2021.00018. [[paper]](https://ieeexplore.ieee.org/document/9680517)
   - 提出了一种基于边缘PBFT模型的区块链架构——EIoVChain，可以最大限度地减少验证延迟和通信延迟，并提供高效的信息存储和访问策略。
   - EIoVCchain实现了一个主/辅边缘服务器分配算法，主要边缘服务器用以生成块，其他所有次边缘服务器用以验证块。
