@@ -5,6 +5,7 @@ Paper reading list in Cooperative perception. This repository will keep updating
 
 ### Survery
 - S. Dong, H. Su, Y. Xia, F. Zhu, X. Hu and B. Wang, "A Comprehensive Survey on Authentication and Attack Detection Schemes That Threaten It in Vehicular Ad-Hoc Networks," in IEEE Transactions on Intelligent Transportation Systems, doi: 10.1109/TITS.2023.3297527. [[paper]](https://ieeexplore.ieee.org/abstract/document/10201386)
+  - 身份认证与隐私保护方案主要分为三类：基于加密（对称（消息认证码、哈希函数、高效流丢失容忍）、非对称、身份三类）、基于数字签名的和基于验证的。
 
 - Nath, H.J., Choudhury, H. Privacy-Preserving Authentication Protocols in Vanet. SN COMPUT. SCI. 4, 589 (2023). [[paper]](https://doi.org/10.1007/s42979-023-02122-3)
 
@@ -21,6 +22,16 @@ Paper reading list in Cooperative perception. This repository will keep updating
 
 
 ### Journals
+- F. Wu, X. Zhang, C. Zhang, X. Chen, W. Fan and Y. Liu, "Batch-Assisted Verification Scheme for Reducing Message Verification Delay of the Vehicular Ad Hoc Networks," in IEEE Internet of Things Journal, vol. 7, no. 9, pp. 8144-8156, Sept. 2020, doi: 10.1109/JIOT.2020.3004811. [[paper]](https://ieeexplore.ieee.org/document/9125873)
+  - 为了降低验证延迟实现快速消息验证，通过在 VANETs 系统中选择合理数量的辅助验证终端与路边单元合作，共同验证网络消息，提出了一种新的分布式协同认证方法。
+  - 实验设置：在 SUMO 中进行仿真分析，仿真区域（2000 m x 2000 m）RSU 通信范围（1000 m），车辆通信范围（300 m），数据传输速率（12 Mb/s）。使用 MIRACL 库得到基本的密码操作执行时间。
+  
+- Udit Bansal et al., "ID-CEPPA: Identity-based Computationally Efficient Privacy-Preserving Authentication scheme for vehicle-to-vehicle communications," in Journal of Systems Architecture, Vol. 123, February 2022, 102387. [[paper]](https://www.sciencedirect.com/science/article/pii/S1383762121002654)
+  - 提出了一种基于身份的计算高效隐私保护身份验证（ID-CEPPA）方案，使用基于身份的加密技术（IDC）和椭圆曲线加密技术（ECC）进行车载自组网（VANET）中的车对车（V2V）通信。该方案有效保证了V2V通信中车辆身份的消息源认证、消息完整性、不可否认性和匿名性。
+
+- H. Liu, H. Wang and H. Gu, "HPBS: A Hybrid Proxy Based Authentication Scheme in VANETs," in IEEE Access, vol. 8, pp. 161655-161667, 2020, doi: 10.1109/ACCESS.2020.3021408. [[paper]](https://ieeexplore.ieee.org/document/9186126)
+  - 提出了一种基于混合代理的认证方案。该方案选择了一些具有固定路线和更多计算和存储资源的车辆作为代理车辆，例如公交车，并使用这些代理车辆向RSU进行身份验证。
+
 - Z. Wang et al., "An Anonymous and Revocable Authentication Protocol for Vehicle-to-Vehicle Communications," in IEEE Internet of Things Journal, vol. 10, no. 6, pp. 5114-5127, 15 March15, 2023, doi: 10.1109/JIOT.2022.3222469. [[paper]](https://ieeexplore.ieee.org/document/9953072)
 
 - S. Bojjagani, Y. C. A. P. Reddy, T. Anuradha, P. V. V. Rao, B. R. Reddy and M. K. Khan, "Secure Authentication and Key Management Protocol for Deployment of Internet of Vehicles (IoV) Concerning Intelligent Transport Systems," in IEEE Transactions on Intelligent Transportation Systems, vol. 23, no. 12, pp. 24698-24713, Dec. 2022, doi: 10.1109/TITS.2022.3207593. [[paper]](https://ieeexplore.ieee.org/document/9905232)
