@@ -18,4 +18,6 @@ Paper reading list in Cooperative perception. This repository will keep updating
 
 ## Security in V2X networks
 * Ansari, M. R., Petit, J., Monteuuis, J. P., & Chen, C. VASP: V2X Application Spoofing Platform. [[paper]](https://www.ndss-symposium.org/wp-content/uploads/2023/02/vehiclesec2023-23071-paper.pdf),[[code]](https://github.com/quic/vasp),[[Qualcomm Innovation Center]](https://quic.github.io/)
-    * VASP攻击仿真平台，比较了VeReMi和F2MD，是F2MD的paper二作，能仿真更多攻击和自定义攻击。
+  * VASP攻击仿真平台，比较了VeReMi和F2MD，是F2MD的paper二作，能仿真更多攻击和自定义攻击。
+* A. Willecke, B. Kulke and L. C. Wolf, "A4MD: Artery for Misbehavior Detection, Reporting, and Reaction in the ETSI C-ITS," 2023 IEEE Vehicular Networking Conference (VNC), Istanbul, Turkiye, 2023, pp. 33-40, doi: 10.1109/VNC57357.2023.10136315. [[paper]](https://ieeexplore.ieee.org/abstract/document/10136315),[[code]](https://github.com/ibr-cm/a4md)
+  * A4MD平台 
