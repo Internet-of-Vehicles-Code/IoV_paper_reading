@@ -15,6 +15,7 @@ Paper reading list in Cooperative perception. This repository will keep updating
 
 ## Vehicular edge computing
 * Y. Ju et al., "Joint Secure Offloading and Resource Allocation for Vehicular Edge Computing Network: A Multi-Agent Deep Reinforcement Learning Approach," in IEEE Transactions on Intelligent Transportation Systems, vol. 24, no. 5, pp. 5555-5569, May 2023, doi: 10.1109/TITS.2023.3242997. [[paper]](https://ieeexplore.ieee.org/abstract/document/10041957)
+* Rodolfo Meneguette, Robson De Grande, Jo Ueyama, Geraldo P. Rocha Filho, and Edmundo Madeira. 2021. Vehicular Edge Computing: Architecture, Resource Management, Security, and Challenges. ACM Comput. Surv. 55, 1, Article 4 (January 2023), 46 pages. https://doi.org/10.1145/3485129 [[paper]](https://dl.acm.org/doi/full/10.1145/3485129)
 
 ## Security in V2X networks
 * Ansari, M. R., Petit, J., Monteuuis, J. P., & Chen, C. VASP: V2X Application Spoofing Platform. [[paper]](https://www.ndss-symposium.org/wp-content/uploads/2023/02/vehiclesec2023-23071-paper.pdf),[[code]](https://github.com/quic/vasp),[[Qualcomm Innovation Center]](https://quic.github.io/)
