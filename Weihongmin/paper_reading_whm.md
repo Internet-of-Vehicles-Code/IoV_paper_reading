@@ -1,9 +1,28 @@
+- [Paper-Reading](#paper-reading)
+  - [Authentication](#authentication)
+    - [Survery](#survery)
+    - [Journals](#journals)
+    - [Conferences](#conferences)
+  - [Sybil Attack Detection](#sybil-attack-detection)
+    - [Overview](#overview)
+    - [Conferences](#conferences-1)
+  - [Pseudonym Changing Scheme](#pseudonym-changing-scheme)
+    - [Journals](#journals-1)
+    - [Conferences](#conferences-2)
+  - [Other](#other)
+    - [Journals](#journals-2)
+    - [Conference](#conference)
+
+
 # Paper-Reading
 Paper reading list in Cooperative perception. This repository will keep updating ... 🤗
 
 ## Authentication
 
 ### Survery
+- Patruni Muralidhara Rao al., A comprehensive survey on authentication and secure key management in internet of things: Challenges, countermeasures, and future directions," in Ad Hoc Networks, Vol. 146, 1 July 2023, 103159. [[paper]](https://doi.org/10.1016/j.adhoc.2023.103159)
+  - 介绍了目前物联网中的一些身份认证技术，专业术语，以及形式化安全性能分析工具。
+
 - S. Dong, H. Su, Y. Xia, F. Zhu, X. Hu and B. Wang, "A Comprehensive Survey on Authentication and Attack Detection Schemes That Threaten It in Vehicular Ad-Hoc Networks," in IEEE Transactions on Intelligent Transportation Systems, doi: 10.1109/TITS.2023.3297527. [[paper]](https://ieeexplore.ieee.org/abstract/document/10201386)
   - 身份认证与隐私保护方案主要分为三类：基于加密（对称（消息认证码、哈希函数、高效流丢失容忍）、非对称、身份三类）、基于数字签名的和基于验证的。
 
@@ -165,9 +184,27 @@ Paper reading list in Cooperative perception. This repository will keep updating
   - 时戳链、邻居列表。
 
 
+## Pseudonym Changing Scheme
+### Journals
+
+### Conferences
+- J. Wang, Y. Sun and C. Phillips, "Fake Beacon: A Pseudonym Changing Scheme for Low Vehicle Density in VANETs," 2023 IEEE 97th Vehicular Technology Conference (VTC2023-Spring), Florence, Italy, 2023, pp. 1-7, doi: 10.1109/VTC2023-Spring57618.2023.10199627. [[paper]](https://ieeexplore.ieee.org/document/10199627)
+  - 提出了一种适用于低车辆密度情况的假信标假名更改方案，使得 mix-zone 中的 RSU 可以生成假信标。与传统的混合区域方案相比，对手恢复车辆轨迹的成功率下降了 50% 以上。
+  - 目前的假名更改方案在车辆低密度场景下容易受到攻击。（1）CMIX：加密混合，信标在内部进行加密。更改假名的过程被隐藏，使得窃听者无法持续跟踪车辆。（2）基于 chaff：RSU 预测车辆方向，并使用假信标或虚拟车辆填充没有车辆的其他方向。
+  - 比较了允许超车和不允许超车情况下方案的性能。
+
+
 
 ## Other
 ### Journals
+- Q. Feng, K. Yang, M. Ma and D. He, "Efficient Multi-Party EdDSA Signature With Identifiable Aborts and its Applications to Blockchain," in IEEE Transactions on Information Forensics and Security, vol. 18, pp. 1937-1950, 2023, doi: 10.1109/TIFS.2023.3256710. [[paper]](https://ieeexplore.ieee.org/document/10068261)
+
+- J. Guruprakash and S. Koppu, “An Empirical Study to Demonstrate that EdDSA can be used as a Performance Improvement Alternative to ECDSA in Blockchain and IoT,” Informatica  (Slovenia), vol. 46, no. 2, pp. 277–290, Jun. 2022, doi: 10.31449/inf.v46i2.3807. [[paper]](https://www.informatica.si/index.php/informatica/article/viewFile/3807/1764)
+  - 对 ECDSA 与爱德华兹曲线数字签名算法（EdDSA）进行了实证比较。该研究的结论表明，EdDSA 优于 ECDSA，并且可以应用于区块链和物联网领域。
+  - [10] 建议对比特币使用带有 SHA-512 的 EdDSA，因为与带有哈希 SHA-265 的现有 secp256k1 相比，它有助于提高安全性和效率。
+  - EdCDH
+  - 爱德华兹曲线使用消息散列而不是随机数，使该系统无冲突，并且每个消息都有不同的密钥。签名计算基于SHA算法，长度固定。签名和私钥用于生成签名并对消息进行签名。该数字签名允许接收者确定真实性并提供不可否认性。
+
 - Q. Yu, J. Ren, Y. Fu, Y. Li and W. Zhang, "Cybertwin: An Origin of Next Generation Network Architecture," in IEEE Wireless Communications, vol. 26, no. 6, pp. 111-117, December 2019, doi: 10.1109/MWC.001.1900184. [[paper]](https://ieeexplore.ieee.org/document/8910636)  
   - 提出了一种基于Cybertwin的四层网络架构：Core Cloud、Edge Cloud、Cybertwin、Ends。
   - 作为虚拟网络空间中人或物的数字表示Cybertwin主要具有3个功能：通信助手、网络行为记录器和数字资产所有者。
@@ -200,6 +237,10 @@ Paper reading list in Cooperative perception. This repository will keep updating
 
 
 ### Conference
+- W. D. Walidaniy, M. Yuliana and H. A. Darwito, "Enhancing Document Authenticity with QR Codes and ECC-Based Digital Signatures," 2023 International Electronics Symposium (IES), Denpasar, Indonesia, 2023, pp. 238-243, doi: 10.1109/IES59143.2023.10242576. [[paper]](https://ieeexplore.ieee.org/abstract/document/10242576)
+  - 本文讨论了一种使用 OpenSSL 库实现的 ECDSA 认证方案，专门用于在智能电表和服务器之间建立认证。
+  - 文中提到：（1）EdwardsCurve 数字签名算法 （EdDSA），因为它是椭圆曲线密码学（ECC）中最先进的算法。与常用的椭圆曲线数字签名算法（ECDSA）相比，EdDSA 在速度和安全性方面具有显著优势[8]。（2）椭圆曲线数字签名算法 （ECDSA） 由于容易受到侧信道分析（SCA）攻击，因此不再被认为适用于嵌入式设备。在 ECDSA 中，安全性在很大程度上依赖于随机数生成器（RNG）的质量和安全实现，以生成用于对消息进行签名的临时秘密随机数。相比之下，EdDSA 使用哈希函数来安全且确定地生成随机数。这种区别加强了EdDSA提供的增强安全措施，解决了 ECDSA 中与 RNG 相关的潜在漏洞[12]。
+
 - H. Bao, X. Zhang, G. Wang, M. Zhang, Y. Wang and Y. Zhao, "RepuFilter: Prevention of Untrusted Packet Spread Based on Trust Evaluation in Wireless Networks," ICC 2023 - IEEE International Conference on Communications, Rome, Italy, 2023, pp. 5972-5977, doi: 10.1109/ICC45041.2023.10278691. [[paper]](https://ieeexplore.ieee.org/document/10278691) 
   - 提出了一种基于网络用户之间信任评估的传递性的动态信任评估模型，并将该模型应用于数据包过滤。
 
