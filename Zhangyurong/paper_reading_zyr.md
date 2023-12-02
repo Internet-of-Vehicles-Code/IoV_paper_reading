@@ -12,3 +12,5 @@ Paper reading list in Cooperative perception. This repository will keep updating
 - **Van Der Heijden R W, Lukaseder T, Kargl F. Veremi: A dataset for comparable evaluation of misbehavior detection in vanets[C]//Security and Privacy in Communication Networks: 14th International Conference, SecureComm 2018, Singapore, Singapore, August 8-10, 2018, Proceedings, Part I. Springer International Publishing, 2018: 318-337. [[paper]](https://arxiv.org/pdf/1804.06701.pdf)**
 
 - **Wang K, Jiang Q, Wang B, et al. Effective In-vehicle Intrusion Detection via Multi-view Statistical Graph Learning on CAN Messages[J]. arXiv preprint arXiv:2311.07056, 2023.[[paper]](https://arxiv.org/pdf/2311.07056.pdf)**
+
+- **A. Lochbihler, A. Husseinat, M. Ma, M. Abuibaid, J. S. Huang and B. Zhu, "Misbehaviour Detection of 5G-Connected Vehicles Using Deep Learning," 2023 IEEE 20th International Conference on Mobile Ad Hoc and Smart Systems (MASS), Toronto, ON, Canada, 2023, pp. 646-651, doi: 10.1109/MASS58611.2023.00091.**[[paper]](https://ieeexplore.ieee.org/document/10298340)
