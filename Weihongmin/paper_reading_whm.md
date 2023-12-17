@@ -41,6 +41,9 @@ Paper reading list in Cooperative perception. This repository will keep updating
 
 
 ### Journals
+- L. Wei, J. Cui, H. Zhong, I. Bolodurina, C. Gu and D. He, "A Decentralized Authenticated Key Agreement Scheme Based on Smart Contract for Securing Vehicular Ad-hoc Networks," in IEEE Transactions on Mobile Computing, doi: 10.1109/TMC.2023.3288930. [[paper]](https://ieeexplore.ieee.org/abstract/document/10160143)
+    - 丢包率分析参考，丢包率主要由MAC层竞争机制引起的。在V2V场景中，Li等人的方案[10]的丢包率超过0.6，而我们提出的方案和Chattaraj等人的方案[21]的丢包率均为0。在V2I场景中，AKA消息相关丢包率的仿真结果如图7所示，我们可以发现我们提出的方案的丢包率略高于Ma等人的方案[9]但低于 Chattaraj 等人的方案 [21]。
+
 - F. Wu, X. Zhang, C. Zhang, X. Chen, W. Fan and Y. Liu, "Batch-Assisted Verification Scheme for Reducing Message Verification Delay of the Vehicular Ad Hoc Networks," in IEEE Internet of Things Journal, vol. 7, no. 9, pp. 8144-8156, Sept. 2020, doi: 10.1109/JIOT.2020.3004811. [[paper]](https://ieeexplore.ieee.org/document/9125873)
   - 为了降低验证延迟实现快速消息验证，通过在 VANETs 系统中选择合理数量的辅助验证终端与路边单元合作，共同验证网络消息，提出了一种新的分布式协同认证方法。
   - 实验设置：在 SUMO 中进行仿真分析，仿真区域（2000 m x 2000 m）RSU 通信范围（1000 m），车辆通信范围（300 m），数据传输速率（12 Mb/s）。使用 MIRACL 库得到基本的密码操作执行时间。
