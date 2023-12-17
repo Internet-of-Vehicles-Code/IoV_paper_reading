@@ -172,6 +172,15 @@ Paper reading list in Cooperative perception. This repository will keep updating
 
 
 ### Conferences
+- A. Paranjothi and M. S. Khan, "Enhancing Security in VANETs with Sybil Attack Detection using Fog Computing," 2023 IEEE 98th Vehicular Technology Conference (VTC2023-Fall), Hong Kong, Hong Kong, 2023, pp. 1-6, doi: 10.1109/VTC2023-Fall60731.2023.10333491. [[paper]](https://ieeexplore.ieee.org/document/10333491)
+  - 提出了一种基于雾计算的VANET女巫攻击检测（FSDV），它利用该地区所有车辆的车载单元（OBU）来创建动态雾，使用统计技术进行流氓节点检测。我们的目标是减少数据处理延迟、开销和 FPR，以检测在高车辆密度下导致女巫攻击的流氓节点。我们的框架的性能是通过使用OMNET++和SUMO模拟器进行模拟来实现的。
+  - 保护节点利用所有车辆的 OBU 动态创建雾，以检测该区域广播较低速度值的流氓节点。部署雾层后，守卫节点开始将相邻车辆添加到邻居列表中，这是第一次遇到的情况。否则，它会更新相邻车辆的时间戳。当信标消息在区域中广播时（即每 100 毫秒），邻居列表会持续更新。然后，通过对比和分析信标消息中广播的速度值来实现对恶意节点的检测。如果速度差大于动态阈值，则检测到女巫攻击。
+  - Greenshields 模型认为道路的最佳密度为固定值，与道路限速无关。
+  - **缺点**：纯靠V2V通信，如果Sybil车辆速度与动态雾车辆速度相当，检测效果将会很差，加入精度高的定位传感器，可以解决这一问题。
+
+- M. S. Ali and P. Merdrignac, "Distributed Misbehavior Detection based on Vehicle Perception Model and CPM Data Collection," 2023 IEEE 98th Vehicular Technology Conference (VTC2023-Fall), Hong Kong, Hong Kong, 2023, pp. 1-5, doi: 10.1109/VTC2023-Fall60731.2023.10333637. [[paper]](https://ieeexplore.ieee.org/document/10333637)
+  - 本文介绍了一种创新的不当行为检测（MBD）算法，该算法旨在使用集体感知消息（CPM）识别协作智能交通系统（C-ITS）中的错误**突然停车**信息。该算法集成了车辆感知模型和来自相邻车辆的 CPM 数据。通过使用 Omnet++、SUMO 和 Veins 进行的综合模拟，我们探索了该算法在各种感知范围内的性能。
+
 - B. Liu, J. Cai and J. Liu, "RSSI-Based Sybil Attack Detection Under Fading Channel in VANET," ICC 2023 - IEEE International Conference on Communications, Rome, Italy, 2023, pp. 5879-5884, doi: 10.1109/ICC45041.2023.10279536. [[paper]](https://ieeexplore.ieee.org/document/10279536)
   - 针对VANET中衰落信道和节点高度移动性的特点，提出了一种改进的基于RSSI的Sybil攻击检测方法。
   - 首先通过**最大似然估计**估计各通信节点之间的距离，然后通过**均值漂移聚类算法**检测sybil节点。
