@@ -200,6 +200,9 @@ Paper reading list in Cooperative perception. This repository will keep updating
 ### Journals
 
 ### Conferences
+- G. G. Zoccoli, D. Stabili and M. Marchetti, "Are VANETs pseudonyms effective? An experimental evaluation of pseudonym tracking in adversarial scenario," 2023 IEEE 98th Vehicular Technology Conference (VTC2023-Fall), Hong Kong, Hong Kong, 2023, pp. 1-6, doi: 10.1109/VTC2023-Fall60731.2023.10333561. [[paper]](https://ieeexplore.ieee.org/abstract/document/10333561) [[code]](https://github.com/SECloudUNIMORE/ACS/tree/master/PTS)
+  - 
+
 - J. Wang, Y. Sun and C. Phillips, "Fake Beacon: A Pseudonym Changing Scheme for Low Vehicle Density in VANETs," 2023 IEEE 97th Vehicular Technology Conference (VTC2023-Spring), Florence, Italy, 2023, pp. 1-7, doi: 10.1109/VTC2023-Spring57618.2023.10199627. [[paper]](https://ieeexplore.ieee.org/document/10199627)
   - 提出了一种适用于低车辆密度情况的假信标假名更改方案，使得 mix-zone 中的 RSU 可以生成假信标。与传统的混合区域方案相比，对手恢复车辆轨迹的成功率下降了 50% 以上。
   - 目前的假名更改方案在车辆低密度场景下容易受到攻击。（1）CMIX：加密混合，信标在内部进行加密。更改假名的过程被隐藏，使得窃听者无法持续跟踪车辆。（2）基于 chaff：RSU 预测车辆方向，并使用假信标或虚拟车辆填充没有车辆的其他方向。
