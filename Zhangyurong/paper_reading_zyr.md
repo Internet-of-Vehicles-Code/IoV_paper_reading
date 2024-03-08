@@ -10,6 +10,7 @@ Paper reading list in Cooperative perception. This repository will keep updating
    注：ICC 2022
    1. 研究背景与目的：
       - 现代车辆，包括自动驾驶和联网车辆，越来越多地连接到外部世界，这增加了车联网（IoV）的网络攻击面，使其更容易受到网络威胁。 
+      - 现代车辆，包括自动驾驶和联网车辆，越来越多地连接到外部世界，这增加了车联网（IoV）的网络攻击面，使其更容易受到网络威胁。
       - 由于车载网络缺乏认证和加密程序，入侵检测系统（IDS）是保护现代车辆系统免受网络攻击的重要方法。
    2. 方法论：
       - 提出了一种基于迁移学习和集成学习的IoV系统IDS，使用卷积神经网络（CNN）和超参数优化技术。
@@ -75,6 +76,57 @@ Paper reading list in Cooperative perception. This repository will keep updating
          - 带 CNN 的四层 LSTM
 
    ```
+- **薛宏伟.面向智能网联汽车的网络异常行为检测方法研究[D].东南大学,2021.DOI:10.27014/d.cnki.gdnau.2021.003115.[[paper]](https://kns.cnki.net/kcms2/article/abstract?v=yXT3uqWUX_-EDYP8LlA_mRorFVKfBHHJrzWvS9fHYuoFr84ZLVzX7GlDsnYFC0mT0mGXCXuae48zN2SBO9kC2ZwNpRwGz-dAk7if5vbghPdk39wRBcz_pAeQcMYTFXItFc9MiH0jSfrNKzjqucus7Q==&uniplatform=NZKPT&language=CHS)[[笔记]](<../../../车联网安全/detection/V2X Misbehavior Detection/面向智能网联汽车的网络异常行为检测方法研究note.md>)**
+   ```
+   注：2021年  
+   核心内容：
+   1. 异常行为检测方法：
+      - 基于密码学的方法
+      - 基于异常行为检测的方法，包括以节点为中心（Node-centric MDS）和以数据为中心（Data-centric MDS）的检测。
+   2. 智能网联汽车网络安全模型建立：
+      - 交通仿真模型
+      - 车联网通信模块，包括通信数据格式的重新定义，考虑了位置、速度、加速度和航向的误差。
+      - 网络攻击模式，包括单一攻击（拒绝服务、女巫攻击、重放攻击）和复合性攻击（DDS攻击）。
+      - 智能网联汽车网络安全联合仿真，使用Veins和OMNeT++进行仿真。
+   3. 基于Stacking集成学习的车联网异常行为检测方法：
+      - 异常行为检测架构
+      - 数据清洗和特征值筛选
+      - 模型训练与测试
+      - 使用常用评价指标（Accuracy、Precision、Recall、F1-Score）进行评估。
+   4. 基于GAN网络的车联网异常行为检测方法：
+      - 利用生成对抗式网络（GAN）学习Replay攻击的潜在分布，生成大量带标签的Replay攻击数据。
+      - 通过GAN网络生成对抗样本，解决数据集中正常行为样本和异常行为样本数量不平衡的问题。
+      - 性能比较，提出的方法在准确率、精确率和F1-Score上有所提升。
+   5. 智能网联汽车的网络异常行为检测系统设计及实现：
+      - 系统整体架构
+      - 车载平台设计，包括在线和离线工作模式。
+      - 云控平台设计，基于HTTP协议，实现全局网络状态分析。
+      - 可视化模块设计，包括web界面和SUMO界面。
+   6. 总结与展望：
+      - 本文研究了智能网联汽车的网络攻击和异常行为检测方法。
+      - 提出了基于Stacking集成学习和GAN网络的检测方法。
+      - 未来研究可以扩展更多攻击方式，优化算法检测效果，并尝试引入深度卷积神经网络和更换损失函数以提升模型性能。
+   ```
+- **K. Agrawal, T. Alladi, A. Agrawal, V. Chamola and A. Benslimane, "NovelADS: A Novel Anomaly Detection System for Intra-Vehicular Networks," in IEEE Transactions on Intelligent Transportation Systems, vol. 23, no. 11, pp. 22596-22606, Nov. 2022, doi: 10.1109/TITS.2022.3146024.[[paper]](https://ieeexplore.ieee.org/document/9706416)[[code]](https://github.com/kushagra-2503/Artificial-Intelligence-Enabled-Security-Provisioning-for-Autonomous-Vehicles)**
+   ```
+   注：TITS.2022
+   1. 数据集：CAN-INTRUSION-DATASET
+      - DoS attack
+      - fuzzy attacks
+      - gear attack
+      - rpm attack
+   2. 模型选择：
+      - 正在使用的模型：Stacked LSTMS 和 CNN LSTMS
+      - 对 6 个模型进行了实验：
+         - 单层 LSTM
+         - CNN + 单层 LSTM
+         - 两层 LSTM
+         - 三层 LSTM
+         - 带 CNN 的三层 LSTM
+         - 带 CNN 的四层 LSTM
+
+   ```
+
 - **A. Boualouache and T. Engel, "A Survey on Machine Learning-Based Misbehavior Detection Systems for 5G and Beyond Vehicular Networks," in IEEE Communications Surveys & Tutorials, vol. 25, no. 2, pp. 1128-1172, Secondquarter 2023, doi: 10.1109/COMST.2023.3236448.[[paper]](https://ieeexplore.ieee.org/document/10015746)**
    ```
    注：IEEE Communications Surveys & Tutorials 2023
@@ -109,6 +161,27 @@ Paper reading list in Cooperative perception. This repository will keep updating
    4. 模型性能评估：文章不仅使用了传统的准确率（accuracy）、召回率（recall）、精确率（precision）和F1分数等指标，还引入了Matthew相关系数（MCC）和Cohen's Kappa Score（CKS）来更全面地评估模型性能，特别是在类别不平衡的情况下。
    5. 同时，FL数据集划分通过id进行划分，比随机将数据集人为划分为多个数据集更加符合真实场景。
    ```
+- **An Enhanced Model for Machine Learning-Based DoS Detection in Vehicular Networks.
+[[paper]](https://ieeexplore.ieee.org/abstract/document/10186390)[[code]](https://github.com/ercansec/AttackDetectionMachineLearning)**
+   ```
+   注：2023年会议IFIP                                                     
+   文章的创新点：
+   1. 提出了一个新的机器学习模型检测车辆网络中的拒绝服务（DoS）攻击（数据集为VeReMi Extension）。
+   2. 引入了适合车辆网络环境和DoS攻击的特征选择，包括发送者和接收者之间的相对位置、速度、加速度、航向等。
+   3. 实现了数据采样方法，包括过采样和欠采样，以解决数据集不平衡问题，从而提高分类性能。
+   4. 使用了集成学习（Ensemble Learning）技术，结合了提升（Boosting）、装袋（Bagging）和堆叠（Stacking）方法，以提高入侵检测系统（IDS）的性能。
+   ```
+- **Edge Computing-enabled Intrusion Detection for C-V2X Networks using Federated Learning.
+[[paper]](https://ieeexplore.ieee.org/document/10001675)**
+   ```
+   注：GLOBECOM 2022                                                    
+   文章的创新点：
+   1. 利用边缘计算和联邦学习构建分布式入侵检测模型，以实现低延迟和高效的攻击检测。
+   2. 使用CIC-IDS2018数据集进行特征工程，通过ANOVA方法选择最有信息量的特征，以提高模型性能。
+   总结：
+   介绍了一种基于边缘计算和联邦学习的分布式入侵检测系统（DID），用于车联网（C-V2X）网络。该系统旨在解决传统集中式入侵检测系统（IDS）在资源消耗和数据隐私方面的局限性。通过联邦学习，系统能够在多个分散的节点上协作训练全局机器学习模型，同时保持数据隐私并减少网络开销。选择了CIC-IDS2018数据集作为基础，该数据集包含了多种网络攻击场景。通过特征工程和ANOVA方法，系统仅考虑最具信息量的特征。
+   ```
+
 😊😊(看过忘了)
 - **A stacked ensemble learning IDS model forSoftware-defined VANET.[[paper]](https://arxiv.org/abs/2312.04956)**
    ```
