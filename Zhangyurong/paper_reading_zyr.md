@@ -27,36 +27,6 @@ Paper reading list in Cooperative perception. This repository will keep updating
       - 使用置信度平均和连接两种集成策略构建最终的检测模型。
    ```
 
-- **薛宏伟.面向智能网联汽车的网络异常行为检测方法研究[D].东南大学,2021.DOI:10.27014/d.cnki.gdnau.2021.003115.[[paper]](https://kns.cnki.net/kcms2/article/abstract?v=yXT3uqWUX_-EDYP8LlA_mRorFVKfBHHJrzWvS9fHYuoFr84ZLVzX7GlDsnYFC0mT0mGXCXuae48zN2SBO9kC2ZwNpRwGz-dAk7if5vbghPdk39wRBcz_pAeQcMYTFXItFc9MiH0jSfrNKzjqucus7Q==&uniplatform=NZKPT&language=CHS)[[笔记]](<../../../车联网安全/detection/V2X Misbehavior Detection/面向智能网联汽车的网络异常行为检测方法研究note.md>)**
-   ```
-   注：2021年  
-   1. 异常行为检测方法：
-      - 基于密码学的方法
-      - 基于异常行为检测的方法，包括以节点为中心（Node-centric MDS）和以数据为中心（Data-centric MDS）的检测。
-   2. 智能网联汽车网络安全模型建立：
-      - 交通仿真模型
-      - 车联网通信模块，包括通信数据格式的重新定义，考虑了位置、速度、加速度和航向的误差。
-      - 网络攻击模式，包括单一攻击（拒绝服务、女巫攻击、重放攻击）和复合性攻击（DDS攻击）。
-      - 智能网联汽车网络安全联合仿真，使用Veins和OMNeT++进行仿真。
-   3. 基于Stacking集成学习的车联网异常行为检测方法：
-      - 异常行为检测架构
-      - 数据清洗和特征值筛选
-      - 模型训练与测试
-      - 使用常用评价指标（Accuracy、Precision、Recall、F1-Score）进行评估。
-   4. 基于GAN网络的车联网异常行为检测方法：
-      - 利用生成对抗式网络（GAN）学习Replay攻击的潜在分布，生成大量带标签的Replay攻击数据。
-      - 通过GAN网络生成对抗样本，解决数据集中正常行为样本和异常行为样本数量不平衡的问题。
-      - 性能比较，提出的方法在准确率、精确率和F1-Score上有所提升。
-   5. 智能网联汽车的网络异常行为检测系统设计及实现：
-      - 系统整体架构
-      - 车载平台设计，包括在线和离线工作模式。
-      - 云控平台设计，基于HTTP协议，实现全局网络状态分析。
-      - 可视化模块设计，包括web界面和SUMO界面。
-   6. 总结与展望：
-      - 本文研究了智能网联汽车的网络攻击和异常行为检测方法。
-      - 提出了基于Stacking集成学习和GAN网络的检测方法。
-      - 未来研究可以扩展更多攻击方式，优化算法检测效果，并尝试引入深度卷积神经网络和更换损失函数以提升模型性能。
-   ```
 - **K. Agrawal, T. Alladi, A. Agrawal, V. Chamola and A. Benslimane, "NovelADS: A Novel Anomaly Detection System for Intra-Vehicular Networks," in IEEE Transactions on Intelligent Transportation Systems, vol. 23, no. 11, pp. 22596-22606, Nov. 2022, doi: 10.1109/TITS.2022.3146024.[[paper]](https://ieeexplore.ieee.org/document/9706416)[[code]](https://github.com/kushagra-2503/Artificial-Intelligence-Enabled-SecurityProvisioning-for-Autonomous-Vehicles)**
    ```
    注：TITS.2022
@@ -172,7 +142,8 @@ Paper reading list in Cooperative perception. This repository will keep updating
    4. 使用了集成学习（Ensemble Learning）技术，结合了提升（Boosting）、装袋（Bagging）和堆叠（Stacking）方法，以提高入侵检测系统（IDS）的性能。
    ```
 - **Edge Computing-enabled Intrusion Detection for C-V2X Networks using Federated Learning.
-[[paper]](https://ieeexplore.ieee.org/document/10001675)**
+[[paper]](https://ieeexplore.ieee.org/document/10001675)[[笔记]](<../../../车联网安全/detection/IDS/Edge Computing-enabled Intrusion Detection for.docx>)**
+ ![](./images/image2.jpg)
    ```
    注：GLOBECOM 2022                                                    
    文章的创新点：
@@ -180,6 +151,144 @@ Paper reading list in Cooperative perception. This repository will keep updating
    2. 使用CIC-IDS2018数据集进行特征工程，通过ANOVA方法选择最有信息量的特征，以提高模型性能。
    总结：
    介绍了一种基于边缘计算和联邦学习的分布式入侵检测系统（DID），用于车联网（C-V2X）网络。该系统旨在解决传统集中式入侵检测系统（IDS）在资源消耗和数据隐私方面的局限性。通过联邦学习，系统能够在多个分散的节点上协作训练全局机器学习模型，同时保持数据隐私并减少网络开销。选择了CIC-IDS2018数据集作为基础，该数据集包含了多种网络攻击场景。通过特征工程和ANOVA方法，系统仅考虑最具信息量的特征。
+   ```
+- **To Tolerate or To Impute Missing Values in V2X Communications Data?[[paper]](https://ieeexplore.ieee.org/document/9608954)**.
+   ```
+   注：IEEE Internet of Things Journal 一区 2022                                                    
+   总结:
+      本文探讨了在车联网（VANETs）中检测恶意行为时如何处理缺失值（接收到的数据可能由于各种原因而包含缺失值，诸如传感器读数中的错误、同步、传感器故障、通信故障和恶意攻击）的问题。作者提出了两种新的方法来处理不完整的V2X通信数据中的缺失值：一种是基于协作聚类的插补方法（COLI），另一种是基于随机子空间选择和Dempster-Shafer融合的缺失容忍方法（MTE-RD）。通过与现有的缺失值处理方法进行比较，作者开发了一个多因素截断框架（INSERT），以在V2X通信数据中系统地引入不同比例、机制和分布的缺失值，从而创建了一个全面的基准数据集。实验结果表明，MTE-RD方法在准确性和F-measure方面显著优于其他处理方法。
+   创新点
+   1. 提出了一种新的基于协作聚类的缺失值插补方法（COLI），这是首次开发协作聚类框架来插补缺失值。
+   2. 提出了一种新的缺失容忍集成方法（MTE-RD），它使用随机子空间选择来形成特征子集，并训练个体分类器，然后通过Dempster-Shafer融合模块结合它们的输出。
+   3. 开发了一个多因素截断框架（INSERT），用于在V2X通信数据中系统地引入缺失值，以模拟实际不完整的通信数据。
+   ```
+
+- **Proof of Travel for Trust-Based Data Validation in V2I Communication.[[paper]](https://ieeexplore.ieee.org/document/10017297)**
+   ```
+   注：IEEE Internet of Things Journal 一区 2023                                                    
+   创新点：
+   1. 提出了一种名为Proof of Travel (POT)的新型V2I通信协议，该协议利用路边基础设施支持，通过验证车辆的空间移动来确定每辆连接车辆的声誉。
+   2. 设计了一种基于POT的投票游戏（PPV算法），用于增强现有的多数投票算法（如CPV），以验证V2I报告的交通事件。
+   3. 使用博弈论框架证明了在采用PPV算法时，所有车辆选择作弊不是一个纯纳什均衡（NE），因为理性的对手会因为POT带来的额外成本而失去进行恶意行为的兴趣。
+   4. 通过仿真实验表明，PPV算法能够容忍更高比例的恶意车辆，并比基准CPV算法产生更高的吞吐量。
+   5. 提出了一种长期和短期激励设计，以鼓励车辆分享V2I数据，并在V2X生态系统中建立信任。
+   实验步骤：
+   1. 实验环境搭建：在V2X仿真运行时基础设施（VSimRTI）中实现POT协议和投票算法，并在怀俄明州的I-80州际公路上进行车辆仿真。
+   2. 参数设置：根据实际的交通条件和V2X部署情况，设置仿真参数，包括车辆密度、RSU数量、VVMT阈值等。
+   3. 安全性评估：通过比较RSU确认错误事件或未能报告实际发生事件的次数，来评估CPV和PPV算法对恶意报告的脆弱性。
+   4. 性能评估：测量RSU运行投票算法的吞吐量，即每分钟正确事件的数量，并记录RSU确认事件所需的时间（延迟）。
+   5. VVMT设计影响分析：研究不同VVMT实现（线性和逻辑形式）对车辆声誉的影响，并调整参数以控制车辆获得声誉的难度和速度。
+   6. 安全性与性能权衡：在不同的交通密度和V2I数据关键性级别下，评估PPV算法在确保事件正确性和及时响应之间的权衡。
+   7. 实验结果分析：根据仿真结果，分析PPV算法在不同参数设置下的性能，并与CPV算法进行比较。
+   ```
+
+- **Blockchain Assisted Hybrid Intrusion Detection System in Autonomous Vehicles for Industry 5.0[[paper]](https://ieeexplore.ieee.org/document/10266719)[[笔记]]([Title](../../../%E8%BD%A6%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/detection/IDS/2023_Blockchain_Assisted_Hybrid_Intrusion_Detection_System_in_Autonomous_Vehicles_for_Industry_5.0(1).docx))**.
+   ```
+   注：IEEE Transactions on Consumer Electronics 二区 2023
+   主题：提出了一种结合机器学习（ML）和区块链技术的混合入侵检测系统（BIDS），用于在工业5.0环境中提高自动驾驶车辆（AVs）的安全性。
+   创新点：BIDS框架利用5G-V2X通信网络，提高了检测AVs中异常的准确性和速度，并结合区块链技术增强了信任评估，提高了IoV环境的安全性。
+   详细步骤：通过模拟实验评估了BIDS框架的性能，包括对AVs的运动分析、BIDS的性能分析，以及与其他现有框架的比较。结果表明，BIDS在检测准确率方面达到了98%，并且在处理速度和安全性方面优于其他解决方案。
+   ```
+- **Meta-IDS: Meta-Learning Automotive Intrusion Detection Systems with Adaptive and Learnable[[paper]](https://assets.researchsquare.com/files/rs-3999020/v1_covered_050f41e2-4876-4edd-8d05-8da0278b7639.pdf?c=1709911730)[[code]](https://github.com/335659554/Meta-IDS)**
+   ```
+   注：2024
+   总结：
+   介绍了一种名为Meta-IDS的新型汽车入侵检测系统（Intrusion Detection System, IDS），该系统利用元学习（Meta-Learning）和Meta-SGD算法来增强对各种网络威胁的适应性。Meta-IDS特别关注低流量攻击的检测，这些攻击通常难以被传统IDS系统发现。通过双层优化技术，Meta-IDS能够在特定攻击场景中优化检测精度，并通过外部优化调整元参数以确保在不同场景中的泛化能力。此外，该系统还引入了攻击显著性得分（Attack Prominence Score, APS）来识别微妙的攻击模式，并通过实验结果证明了其在多种攻击场景中的高效性和适应性。
+   
+   创新点：
+   1. 自适应和可学习的汽车IDS：Meta-IDS利用基于优化的元学习方法，特别是Meta-SGD算法，来提高对不同攻击场景的适应性，这是对现有IDS技术的重要补充。
+   2. 双层优化技术：该系统采用双层优化技术，内部优化专注于特定攻击场景的检测精度，而外部优化则调整元参数以确保模型在不同场景中的泛化能力。
+   3. 攻击显著性得分（APS）：为了模拟低流量攻击，Meta-IDS引入了APS，这是一种新的度量标准，用于准确区分低流量攻击。
+   4. 实时车辆级评估：通过在Raspberry Pi 4上进行的评估，证明了Meta-IDS在实际车辆环境中的适用性和高效性。
+   5. 低资源消耗：Meta-IDS在保持高检测性能的同时，其资源消耗低，平均处理时间仅为4.623毫秒，内存占用极小，适合实时检测。
+   6. 适应不同攻击场景；低容量攻击的检测得到补充和重视，专注于低容量攻击来推进该领域，这是众所周知的难以检测，并且在以前的研究中基本上被忽视。
+
+   实验步骤：
+   1. 数据预处理：使用CAN Car-Hacking数据集进行训练和测试，对数据进行零填充、CAN ID转换、时间间隔替换、SMOTE过采样和Z-score标准化。
+   2. 攻击模型和IDS部署场景：定义攻击模型，包括通过无线漏洞或物理访问控制ECU的攻击者，以及IDS在CAN总线上的部署位置。
+   3. 神经网络结构：采用不同的神经网络结构，包括单层LSTM、CNN与单层LSTM的组合、双层堆叠LSTM以及CNN与双层堆叠LSTM的组合。
+   4. 双层优化基于元学习：
+   - 外部优化：调整元参数以优化模型在多种任务中的性能。
+   - 内部优化：使用优化的学习率对模型参数进行微调，以适应特定任务。
+   5. 性能分析：通过实验评估Meta-IDS在不同攻击场景下的性能，包括准确率、精确率、召回率、F1分数、CPU资源使用情况等。
+   6. 与现有工作的比较：将Meta-IDS的性能与现有技术进行比较，证明了其在多种攻击类型上的优越性。
+   7. 车辆级模型评估：在Raspberry Pi 4上进行实际车辆级别的评估，以验证Meta-IDS在实际车辆环境中的可行性和效率。
+   ```
+
+- **WIP: Modeling and Detecting Falsified Vehicle Trajectories Under Data Spoofing Attacks.[[paper]](https://www.ndss-symposium.org/wp-content/uploads/vehiclesec2024-35-paper.pdf)**
+   ```
+   注：2024
+   攻击类型：
+   1. 已知攻击：
+   - ETA攻击：这种攻击通过发送伪造的轨迹信息，使得车辆的预计到达时间（ETA）比实际更长，从而影响交通控制系统的决策。文中提出了一个基于优化的模型来生成ETA攻击轨迹，考虑车辆动力学和邻近车辆的位置。
+   - MSF攻击：这种攻击模拟了对多传感器融合（MSF）系统的欺骗，通过在GPS信号中添加偏差来误导车辆的定位和导航。文中提出了一种创新的建模范式来模仿MSF攻击行为，生成具有类似横向偏差模式的伪造轨迹。
+   2. 未知攻击：
+   VASP（V2X Application Spoofing Platform）平台中的68种典型V2X攻击。
+
+   总结：
+   本文提出了一种通用的异常检测模型，用于识别连接车辆（CV）和连接与自动化车辆（CAV）技术中的异常轨迹。通过模拟两种代表性的已知攻击行为，提出了一个基于交通和车辆领域知识的驾驶特征提取的异常检测框架。该框架结合了特征提取器和使用已知攻击轨迹训练的异常分类器，能够应用于识别由各种攻击生成的伪造轨迹。所提出的模型在检测已知和未知攻击的伪造攻击轨迹方面具有高准确性。
+
+   创新点：
+   1. 通用检测框架：提出了一个结合特征提取器和分类器的通用检测框架，可以针对不同的驾驶场景（如高速公路和信号化交叉口）进行定制，检测框架使用两种已知攻击进行训练，但可以检测其他未知攻击。。
+   2. 特征集的提出：利用交通和车辆领域的知识，提出了一个有效表示正常驾驶行为的特征集。该特征集可以与不同的基于机器学习的分类器（如SVM、随机森林和决策树）结合使用，并在检测已知和未知攻击方面取得了高准确性。
+   3. 新的攻击建模范式：提出了一种新的网络攻击建模范式，能够准确表示车辆级攻击行为，而无需构建复杂的攻击流程。与原始的MSF攻击模型相比，所提出的方法需要更少的计算资源，并且只需要GPS接收器的信息。
+
+   实验步骤：
+   1. 攻击建模：介绍了两种攻击（ETA攻击和MSF攻击）的建模方法，这两种攻击被认为是“复杂”的，因为它们考虑了车辆运动学的物理边界、车辆运动的一致性和交通流属性，大大增加了检测的难度。
+      两种攻击模式：ETA攻击、MSF攻击
+      - ETA攻击生成不遵守汽车跟随规则的伪造轨迹
+      - MSF攻击生成围绕车道中心波动并逐渐偏离道路的伪造轨迹
+   2. 特征提取器：设计了13个特征来捕捉正常驾驶的各个方面，包括纵向和横向驾驶行为。
+         13个特征：平均加速度（绝对值）、平均航向率（绝对值）、平均车跟随距离差（绝对值）、平均速度、速度标准差、平均加速度、加速度标准差、平均航向率、航向率标准差、车跟随距离差异的平均值、车跟随距离差异的标准差、最大速度、最大加速度
+   3. 异常检测框架：结合特征提取器和基于机器学习的异常分类器，设计了一个用于区分伪造轨迹的框架。使用收集到的ETA攻击轨迹和MSF攻击轨迹来训练异常分类器。
+   4. 数值实验：在V2X应用欺骗平台（VASP）中建立了一个带有信号化交叉口的高速公路段，以生成攻击轨迹。使用VASP平台中的68种典型V2X攻击（包括基于运动学值的攻击和针对V2X应用的攻击）来测试所提出的模型的泛化性。
+   5. 未来研究方向：计划在未来的工作中添加两种基线模型进行比较，包括基于合理性检查的模型和基于神经网络的模型。此外，还将探讨神经网络模型是否能够检测未知攻击，因为训练数据中提取的特征（即已知攻击）可能无法代表未知攻击中的异常模式。
+   ```
+- **Multi-Sensors Space and Time Dimension Based Intrusion Detection System in Automated Vehicles.[[paper]](https://ieeexplore.ieee.org/document/10224320)**
+车辆数据集链接：[[数据集]](https://medium.com/udacity/open-sourcing-223gb-of-mountain-view-driving-data-f6b5593fbfa5)
+   ```
+   注：2024年2区
+   1. 背景：现有的入侵检测机制往往无法有效识别通过同时攻击多个传感器来欺骗检测系统的协同攻击（confederate attack）。
+   2. 贡献：提出的入侵检测系统整合了空间维度模型（Space Dimension Model）和时间维度模型（Time Dimension Model），基于传感器数据融合来对抗独立攻击和协同攻击。
+      1. 空间维度模型：该模型利用车内多个传感器之间的多变量数据相关性作为输入，通过优化的卷积神经网络（CNN）模型进行处理。特别地，构建了车辆状态矩阵来表征每个传感器与其他传感器数据之间的底层相关性，并将这些矩阵输入到网络中进行分类。
+      2. 时间维度模型：该模型设计用于描述由多变量传感器数据本身引起的突发偏差，通过利用马氏距离（Mahalanobis Distance, MD）度量来捕捉车辆状态向量在相邻时间的行为。
+   3. 实验研究：通过基于真实世界车辆数据集的广泛实证研究，与仅考虑空间维度和时间维度的两种检测模型进行了比较分析。结果表明，所提出的集成异常检测机制在不同场景下的有效性，准确率提高了3.01%，F1分数提高了3.04%，并且能有效防御协同攻击。
+   4. 主要贡献：
+      - 开发了一个新颖的车辆入侵检测系统，集成了空间维度模型和时间维度模型。
+      - 提出了一种基于CNN分类的通用入侵检测策略，适用于多变量车内传感器数据。
+      - 在真实世界的车辆数据集上实施和评估了集成入侵检测机制，展示了其在不同攻击类型和幅度下的检测能力。
+   ```
+- **IIDS: Intelligent Intrusion Detection System for Sustainable Development in Autonomous Vehicles.[[paper]](https://ieeexplore.ieee.org/document/10144487)**
+   ```
+   注：2023年1区
+   1. 问题：由于车辆网络（IVN）和外部车辆网络（EVN）缺乏认证和显著的安全机制，AVs容易受到网络攻击，如拒绝服务（DoS）、模糊攻击和欺骗攻击。
+   2. 提出的系统：智能入侵检测系统（IIDS），该系统利用修改后的卷积神经网络（CNN）和超参数优化方法来增强IoV系统中的入侵检测和恶意AVs的分类。
+   3. 主要贡献：
+      - 通过数据转换方法有效地将车辆网络流量数据转换为图像，以便简单地区分不同的网络攻击模式。
+      - 通过修改的CNN和超参数优化对恶意AVs进行分类。
+      - IIDS框架采用去中心化的5G-V2X网络，使多个AVs能够通过传输警报消息来检测网络攻击，从而实现快速可靠的入侵检测。
+   4. 实验结果：实验结果显示所提出的IIDS在检测攻击方面达到了98%的准确率。
+   5. 未来工作：未来的工作可以探索将恶意AVs重新集成到网络中的各种方法，以及基于攻击模式的零日攻击检测和缓解策略。
+   ```
+- **X-CANIDS: Signal-Aware Explainable Intrusion Detection System for Controller Area Network-Based In-Vehicle Network.[[paper]](https://ieeexplore.ieee.org/document/10294210)**
+数据集链接:[[数据集]](https://github.com/commaai/opendbc)
+   ```
+   注：2024年2区
+   1. 提出的系统：提出了一个名为X-CANIDS的新型IDS，专为基于CAN的车辆网络设计。X-CANIDS通过使用CAN数据库将CAN消息的有效载荷分解成人类可理解的信号，从而提高了入侵检测性能。这些信号还使得能够理解哪个信号或ECU受到了攻击。能够检测零日攻击，因为它在训练阶段不需要任何标记的数据集。论文还通过在配备GPU的汽车级嵌入式设备上进行基准测试，证实了所提出方法的可行性。
+   2. 实验结果：X-CANIDS在检测模糊测试、伪造攻击、重放攻击等方面表现出色，但在检测暂停攻击方面效果不佳。
+   ```
+- **Many-Objective Optimization Based Intrusion Detection for In-Vehicle Network Security.[[paper]](https://ieeexplore.ieee.org/document/10194469)**
+车辆数据集链接：[[数据集]](http://ocslab.hksecurity.net/Dataset/CAN-intrusion-dataset)(来自2017年的一篇会议`OTIDS: A Novel Intrusion Detection System for
+ In-vehicle Network by using Remote Frame`)
+   ```
+   注：2023年1区
+   1. 研究目标：构建了一个多目标入侵检测模型，包括信息熵、准确率、误报率和异常检测响应时间作为四个目标，这些目标代表了影响入侵检测性能的关键因素。
+   3. 提出的算法：论文设计了一个基于多目标优化的改进入侵检测算法，称为MaOEA-ID，用于优化检测模型参数。该算法具有双重进化选择机制：改进的差分进化算子产生内部种群的新后代，球形修剪机制选择优秀的内部解决方案形成外部存档的选择池。第二次进化选择产生存档的新后代，外部存档的存档选择机制在整个检测过程中选择和存储最优解。
+   4. 实验验证：使用真实世界的车辆网络数据集进行了实验，以验证所提出的模型和算法的性能。
+   5. 主要贡献：
+   - 应用信息熵理论，构建了一个多目标CAN总线数据异常检测优化模型，以反映车辆网络的检测性能。
+   - 设计了一个基于多目标的算法MaOEA-ID，通过内部和外部种群知识的进化融合，大大提高了算法性能。
+   - 通过使用真实世界的车辆网络数据集进行的广泛模拟实验验证了所提出的模型和算法，证明了该方法在车辆网络入侵检测方面的优越性能。
    ```
 
 😊😊(看过忘了)
