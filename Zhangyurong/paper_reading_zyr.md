@@ -1,6 +1,35 @@
 # Paper-Reading
-
 Paper reading list in Cooperative perception. This repository will keep updating ... 🤗
+- [攻击检测](#攻击检测)
+  - [IDS](#ids)
+  - [MBDS](#mbds)
+- [其他](#其他)
+## 攻击检测
+### IDS
+- **M. Fu, P. Wang, M. Liu, Z. Zhang and X. Zhou, "IoV-BERT-IDS: Hybrid Network Intrusion Detection System in IoV Using Large Language Models," in IEEE Transactions on Vehicular Technology, doi: 10.1109/TVT.2024.3402366.[[paper]](https://ieeexplore.ieee.org/abstract/document/10533857)**
+![](./images/image-2.png)
+![](./images/image-3.jpg)
+   ```
+   注：2024年2区-IEEE Transactions on Vehicular Technology
+   模型：bert
+   数据集：CICIDS、BoT-IoT
+   ```
+- **GPS-IDS: An Anomaly-based GPS Spoofing Attack Detection Framework for Autonomous Vehicles.[[paper]](https://arxiv.org/pdf/2405.08359)**
+   ```
+   注：2024年-IEEE TRANSACTIONS ON DEPENDABLE AND SECURE COMPUTING
+   ```
+- **Q. Lai et al., "Improved Transformer-Based Privacy-Preserving Architecture for Intrusion Detection in Secure V2X Communications," in IEEE Transactions on Consumer Electronics, vol. 70, no. 1, pp. 1810-1820, Feb. 2024, doi: 10.1109/TCE.2023.3324081.[[paper]](https://ieeexplore.ieee.org/document/10283969)**
+   ```
+   注：2023年2区-IEEE Transactions on Consumer Electronics
+   联邦学习，transformer，低检测率提高，边缘云，8个机器学习对比模型（其中包括5个深度学习），两个公共IDS数据集
+   ```
+- **S. Almutlaq, A. Derhab, M. M. Hassan and K. Kaur, "Two-Stage Intrusion Detection System in Intelligent Transportation Systems Using Rule Extraction Methods From Deep Neural Networks," in IEEE Transactions on Intelligent Transportation Systems, vol. 24, no. 12, pp. 15687-15701, Dec. 2023, doi: 10.1109/TITS.2022.3202869.[[paper]](https://ieeexplore.ieee.org/document/9882029)**
+   ```
+   注：2022年1区-IEEE Transactions on Intelligent Transportation Systems
+   深度学习中的规则提取（Rule Extraction），深度卷积网络，时间、内存、CPU占用率，四个公共IDS数据集
+   ```
+
+
 - **L. Yang, A. Moubayed and A. Shami, "MTH-IDS: A Multitiered Hybrid Intrusion Detection System for Internet of Vehicles," in IEEE Internet of Things Journal, vol. 9, no. 1, pp. 616-632, 1 Jan.1, 2022, doi: 10.1109/JIOT.2021.3084796.[[paper]](https://ieeexplore.ieee.org/document/9443234)**
 
 - **L. Yang, A. Shami, G. Stevens and S. de Rusett, "LCCDE: A Decision-Based Ensemble Framework for Intrusion Detection in The Internet of Vehicles," GLOBECOM 2022 - 2022 IEEE Global Communications Conference, Rio de Janeiro, Brazil, 2022, pp. 3545-3550, doi: 10.1109/GLOBECOM48099.2022.10001280.[[paper]](https://ieeexplore.ieee.org/document/10001280)**
@@ -46,101 +75,7 @@ Paper reading list in Cooperative perception. This repository will keep updating
          - 带 CNN 的四层 LSTM
 
    ```
-- **薛宏伟.面向智能网联汽车的网络异常行为检测方法研究[D].东南大学,2021.DOI:10.27014/d.cnki.gdnau.2021.003115.[[paper]](https://kns.cnki.net/kcms2/article/abstract?v=yXT3uqWUX_-EDYP8LlA_mRorFVKfBHHJrzWvS9fHYuoFr84ZLVzX7GlDsnYFC0mT0mGXCXuae48zN2SBO9kC2ZwNpRwGz-dAk7if5vbghPdk39wRBcz_pAeQcMYTFXItFc9MiH0jSfrNKzjqucus7Q==&uniplatform=NZKPT&language=CHS)[[笔记]](<../../../车联网安全/detection/V2X Misbehavior Detection/面向智能网联汽车的网络异常行为检测方法研究note.md>)**
-   ```
-   注：2021年  
-   核心内容：
-   1. 异常行为检测方法：
-      - 基于密码学的方法
-      - 基于异常行为检测的方法，包括以节点为中心（Node-centric MDS）和以数据为中心（Data-centric MDS）的检测。
-   2. 智能网联汽车网络安全模型建立：
-      - 交通仿真模型
-      - 车联网通信模块，包括通信数据格式的重新定义，考虑了位置、速度、加速度和航向的误差。
-      - 网络攻击模式，包括单一攻击（拒绝服务、女巫攻击、重放攻击）和复合性攻击（DDS攻击）。
-      - 智能网联汽车网络安全联合仿真，使用Veins和OMNeT++进行仿真。
-   3. 基于Stacking集成学习的车联网异常行为检测方法：
-      - 异常行为检测架构
-      - 数据清洗和特征值筛选
-      - 模型训练与测试
-      - 使用常用评价指标（Accuracy、Precision、Recall、F1-Score）进行评估。
-   4. 基于GAN网络的车联网异常行为检测方法：
-      - 利用生成对抗式网络（GAN）学习Replay攻击的潜在分布，生成大量带标签的Replay攻击数据。
-      - 通过GAN网络生成对抗样本，解决数据集中正常行为样本和异常行为样本数量不平衡的问题。
-      - 性能比较，提出的方法在准确率、精确率和F1-Score上有所提升。
-   5. 智能网联汽车的网络异常行为检测系统设计及实现：
-      - 系统整体架构
-      - 车载平台设计，包括在线和离线工作模式。
-      - 云控平台设计，基于HTTP协议，实现全局网络状态分析。
-      - 可视化模块设计，包括web界面和SUMO界面。
-   6. 总结与展望：
-      - 本文研究了智能网联汽车的网络攻击和异常行为检测方法。
-      - 提出了基于Stacking集成学习和GAN网络的检测方法。
-      - 未来研究可以扩展更多攻击方式，优化算法检测效果，并尝试引入深度卷积神经网络和更换损失函数以提升模型性能。
-   ```
-- **K. Agrawal, T. Alladi, A. Agrawal, V. Chamola and A. Benslimane, "NovelADS: A Novel Anomaly Detection System for Intra-Vehicular Networks," in IEEE Transactions on Intelligent Transportation Systems, vol. 23, no. 11, pp. 22596-22606, Nov. 2022, doi: 10.1109/TITS.2022.3146024.[[paper]](https://ieeexplore.ieee.org/document/9706416)[[code]](https://github.com/kushagra-2503/Artificial-Intelligence-Enabled-Security-Provisioning-for-Autonomous-Vehicles)**
-   ```
-   注：TITS.2022
-   1. 数据集：CAN-INTRUSION-DATASET
-      - DoS attack
-      - fuzzy attacks
-      - gear attack
-      - rpm attack
-   2. 模型选择：
-      - 正在使用的模型：Stacked LSTMS 和 CNN LSTMS
-      - 对 6 个模型进行了实验：
-         - 单层 LSTM
-         - CNN + 单层 LSTM
-         - 两层 LSTM
-         - 三层 LSTM
-         - 带 CNN 的三层 LSTM
-         - 带 CNN 的四层 LSTM
 
-   ```
-
-- **A. Boualouache and T. Engel, "A Survey on Machine Learning-Based Misbehavior Detection Systems for 5G and Beyond Vehicular Networks," in IEEE Communications Surveys & Tutorials, vol. 25, no. 2, pp. 1128-1172, Secondquarter 2023, doi: 10.1109/COMST.2023.3236448.[[paper]](https://ieeexplore.ieee.org/document/10015746)**
-   ```
-   注：IEEE Communications Surveys & Tutorials 2023
-      这是一篇综述
-   - 目前车联网MBDS攻击检测系统方案：
-   1. 传统机器学习
-   - 监督学习中的分类问题：朴素贝叶斯（NB）、Logistic回归（LR）、支持向量机（SVM）、k最近邻（KNN）、随机森林（RF）、人工神经网络（ANN）、额外树（ET）、AdaBoost、决策树桩、集成学习（bagging, boosting, stacking）、XGBoost、光梯度增强机（LGBM）
-   - 无监督学习：异常检测、聚类和降维。常见的聚类算法是k均值模型、层次模型和高斯混合模型。常见的异常检测算法有椭圆包络算法、隔离森林算法、单类SVM算法。
-   2. 深度学习
-   - 监督学习：卷积神经网络（CNN）、递归神经网络（RNN）
-   3. 高级机器学习概念
-   - 联邦学习、强化学习、迁移学习、半监督学习、生成式对抗性网络（GAN）、线上学习
-   ```
-- **F. Dutra, K. Bonfim, C. Siqueira, L. A. Pereira, A. Santos and R. I. Meneguette, "DISMISS-BSM: an Architecture for Detecting Position Spoofing in Basic Safety Messages," GLOBECOM 2022 - 2022 IEEE Global Communications Conference, Rio de Janeiro, Brazil, 2022, pp. 3381-3386, doi: 10.1109/GLOBECOM48099.2022.10001122. [[paper]](https://ieeexplore.ieee.org/document/10001122)[[code]](https://github.com/c2dc/dismiss-bsm-globecom2022)**
-![Alt text](./images/image1.png)
-   ```
-   注：GLOBECOM.2022（MBDS检测）
-   ```
-- **K. A. Bonfim, F. D. S. Dutra, C. E. T. Siqueira, R. I. Meneguette, A. L. Dos Santos and L. A. P. Júnior, "Federated Learning-based Architecture for Detecting Position Spoofing in Basic Safety Messages," 2023 IEEE 97th Vehicular Technology Conference (VTC2023-Spring), Florence, Italy, 2023, pp. 1-5, doi: 10.1109/VTC2023-Spring57618.2023.10199980.[[paper]](https://ieeexplore.ieee.org/document/10199980)[[code]](https://github.com/c2dc/fl-bsm-vtc2023)**
-![Alt text](./images/image.png)
-   ```
-   注：VTC2023-Spring（MBDS检测）
-   ```
-- **Misbehavior detection in intelligent transportation systems based on federated learning.
-[[paper]](https://www.sciencedirect.com/science/article/pii/S2542660524000696)[[code]](https://github.com/Enrique-Marmol/Decentralized_Misbehavior_Detection_based_on_FL_for_Intelligent_Transportation_Systems)[[笔记]](<../../../车联网安全/detection/V2X Misbehavior Detection/2024_3区_基于联邦学习的智能交通系统中的不当行为检测.docx>)**
-   ```
-   注：2024年3区                                                     
-   文章的创新点：
-   1. 联邦学习的应用：文章提出了一种基于联邦学习的协作学习方法，用于车辆不当行为的检测。这种方法允许车辆在不共享其数据的情况下，通过本地训练更新全局模型，从而解决了传统集中式机器学习（ML）方法可能带来的隐私问题和高延迟问题。
-   2. 数据集的重新平衡：文章使用了VeReMi数据集，并应用了SMOTE-Tomek技术来重新平衡数据集，以解决数据集中的类别不平衡问题。这种方法结合了过采样和欠采样，以确保每个类别的样本数量相对均衡，从而提高模型的泛化能力。
-   3. 多层感知器（MLP）的优化：文章使用了优化的多层感知器（MLP）作为ML模型，并结合了FedAvg和Fed+两种聚合函数来评估模型性能。Fed+方法特别适用于处理非独立同分布（non-iid）的数据，这在实际的车辆通信场景中很常见。
-   4. 模型性能评估：文章不仅使用了传统的准确率（accuracy）、召回率（recall）、精确率（precision）和F1分数等指标，还引入了Matthew相关系数（MCC）和Cohen's Kappa Score（CKS）来更全面地评估模型性能，特别是在类别不平衡的情况下。
-   5. 同时，FL数据集划分通过id进行划分，比随机将数据集人为划分为多个数据集更加符合真实场景。
-   ```
-- **An Enhanced Model for Machine Learning-Based DoS Detection in Vehicular Networks.
-[[paper]](https://ieeexplore.ieee.org/abstract/document/10186390)[[code]](https://github.com/ercansec/AttackDetectionMachineLearning)**
-   ```
-   注：2023年会议IFIP                                                     
-   文章的创新点：
-   1. 提出了一个新的机器学习模型检测车辆网络中的拒绝服务（DoS）攻击（数据集为VeReMi Extension）。
-   2. 引入了适合车辆网络环境和DoS攻击的特征选择，包括发送者和接收者之间的相对位置、速度、加速度、航向等。
-   3. 实现了数据采样方法，包括过采样和欠采样，以解决数据集不平衡问题，从而提高分类性能。
-   4. 使用了集成学习（Ensemble Learning）技术，结合了提升（Boosting）、装袋（Bagging）和堆叠（Stacking）方法，以提高入侵检测系统（IDS）的性能。
-   ```
 - **Edge Computing-enabled Intrusion Detection for C-V2X Networks using Federated Learning.
 [[paper]](https://ieeexplore.ieee.org/document/10001675)[[笔记]](<../../../车联网安全/detection/IDS/Edge Computing-enabled Intrusion Detection for.docx>)**
  ![](./images/image2.jpg)
@@ -152,36 +87,6 @@ Paper reading list in Cooperative perception. This repository will keep updating
    总结：
    介绍了一种基于边缘计算和联邦学习的分布式入侵检测系统（DID），用于车联网（C-V2X）网络。该系统旨在解决传统集中式入侵检测系统（IDS）在资源消耗和数据隐私方面的局限性。通过联邦学习，系统能够在多个分散的节点上协作训练全局机器学习模型，同时保持数据隐私并减少网络开销。选择了CIC-IDS2018数据集作为基础，该数据集包含了多种网络攻击场景。通过特征工程和ANOVA方法，系统仅考虑最具信息量的特征。
    ```
-- **To Tolerate or To Impute Missing Values in V2X Communications Data?[[paper]](https://ieeexplore.ieee.org/document/9608954)**.
-   ```
-   注：IEEE Internet of Things Journal 一区 2022                                                    
-   总结:
-      本文探讨了在车联网（VANETs）中检测恶意行为时如何处理缺失值（接收到的数据可能由于各种原因而包含缺失值，诸如传感器读数中的错误、同步、传感器故障、通信故障和恶意攻击）的问题。作者提出了两种新的方法来处理不完整的V2X通信数据中的缺失值：一种是基于协作聚类的插补方法（COLI），另一种是基于随机子空间选择和Dempster-Shafer融合的缺失容忍方法（MTE-RD）。通过与现有的缺失值处理方法进行比较，作者开发了一个多因素截断框架（INSERT），以在V2X通信数据中系统地引入不同比例、机制和分布的缺失值，从而创建了一个全面的基准数据集。实验结果表明，MTE-RD方法在准确性和F-measure方面显著优于其他处理方法。
-   创新点
-   1. 提出了一种新的基于协作聚类的缺失值插补方法（COLI），这是首次开发协作聚类框架来插补缺失值。
-   2. 提出了一种新的缺失容忍集成方法（MTE-RD），它使用随机子空间选择来形成特征子集，并训练个体分类器，然后通过Dempster-Shafer融合模块结合它们的输出。
-   3. 开发了一个多因素截断框架（INSERT），用于在V2X通信数据中系统地引入缺失值，以模拟实际不完整的通信数据。
-   ```
-
-- **Proof of Travel for Trust-Based Data Validation in V2I Communication.[[paper]](https://ieeexplore.ieee.org/document/10017297)**
-   ```
-   注：IEEE Internet of Things Journal 一区 2023                                                    
-   创新点：
-   1. 提出了一种名为Proof of Travel (POT)的新型V2I通信协议，该协议利用路边基础设施支持，通过验证车辆的空间移动来确定每辆连接车辆的声誉。
-   2. 设计了一种基于POT的投票游戏（PPV算法），用于增强现有的多数投票算法（如CPV），以验证V2I报告的交通事件。
-   3. 使用博弈论框架证明了在采用PPV算法时，所有车辆选择作弊不是一个纯纳什均衡（NE），因为理性的对手会因为POT带来的额外成本而失去进行恶意行为的兴趣。
-   4. 通过仿真实验表明，PPV算法能够容忍更高比例的恶意车辆，并比基准CPV算法产生更高的吞吐量。
-   5. 提出了一种长期和短期激励设计，以鼓励车辆分享V2I数据，并在V2X生态系统中建立信任。
-   实验步骤：
-   1. 实验环境搭建：在V2X仿真运行时基础设施（VSimRTI）中实现POT协议和投票算法，并在怀俄明州的I-80州际公路上进行车辆仿真。
-   2. 参数设置：根据实际的交通条件和V2X部署情况，设置仿真参数，包括车辆密度、RSU数量、VVMT阈值等。
-   3. 安全性评估：通过比较RSU确认错误事件或未能报告实际发生事件的次数，来评估CPV和PPV算法对恶意报告的脆弱性。
-   4. 性能评估：测量RSU运行投票算法的吞吐量，即每分钟正确事件的数量，并记录RSU确认事件所需的时间（延迟）。
-   5. VVMT设计影响分析：研究不同VVMT实现（线性和逻辑形式）对车辆声誉的影响，并调整参数以控制车辆获得声誉的难度和速度。
-   6. 安全性与性能权衡：在不同的交通密度和V2I数据关键性级别下，评估PPV算法在确保事件正确性和及时响应之间的权衡。
-   7. 实验结果分析：根据仿真结果，分析PPV算法在不同参数设置下的性能，并与CPV算法进行比较。
-   ```
-
 - **Blockchain Assisted Hybrid Intrusion Detection System in Autonomous Vehicles for Industry 5.0[[paper]](https://ieeexplore.ieee.org/document/10266719)[[笔记]]([Title](../../../%E8%BD%A6%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/detection/IDS/2023_Blockchain_Assisted_Hybrid_Intrusion_Detection_System_in_Autonomous_Vehicles_for_Industry_5.0(1).docx))**.
    ```
    注：IEEE Transactions on Consumer Electronics 二区 2023
@@ -213,36 +118,6 @@ Paper reading list in Cooperative perception. This repository will keep updating
    5. 性能分析：通过实验评估Meta-IDS在不同攻击场景下的性能，包括准确率、精确率、召回率、F1分数、CPU资源使用情况等。
    6. 与现有工作的比较：将Meta-IDS的性能与现有技术进行比较，证明了其在多种攻击类型上的优越性。
    7. 车辆级模型评估：在Raspberry Pi 4上进行实际车辆级别的评估，以验证Meta-IDS在实际车辆环境中的可行性和效率。
-   ```
-
-- **WIP: Modeling and Detecting Falsified Vehicle Trajectories Under Data Spoofing Attacks.[[paper]](https://www.ndss-symposium.org/wp-content/uploads/vehiclesec2024-35-paper.pdf)**
-   ```
-   注：2024
-   攻击类型：
-   1. 已知攻击：
-   - ETA攻击：这种攻击通过发送伪造的轨迹信息，使得车辆的预计到达时间（ETA）比实际更长，从而影响交通控制系统的决策。文中提出了一个基于优化的模型来生成ETA攻击轨迹，考虑车辆动力学和邻近车辆的位置。
-   - MSF攻击：这种攻击模拟了对多传感器融合（MSF）系统的欺骗，通过在GPS信号中添加偏差来误导车辆的定位和导航。文中提出了一种创新的建模范式来模仿MSF攻击行为，生成具有类似横向偏差模式的伪造轨迹。
-   2. 未知攻击：
-   VASP（V2X Application Spoofing Platform）平台中的68种典型V2X攻击。
-
-   总结：
-   本文提出了一种通用的异常检测模型，用于识别连接车辆（CV）和连接与自动化车辆（CAV）技术中的异常轨迹。通过模拟两种代表性的已知攻击行为，提出了一个基于交通和车辆领域知识的驾驶特征提取的异常检测框架。该框架结合了特征提取器和使用已知攻击轨迹训练的异常分类器，能够应用于识别由各种攻击生成的伪造轨迹。所提出的模型在检测已知和未知攻击的伪造攻击轨迹方面具有高准确性。
-
-   创新点：
-   1. 通用检测框架：提出了一个结合特征提取器和分类器的通用检测框架，可以针对不同的驾驶场景（如高速公路和信号化交叉口）进行定制，检测框架使用两种已知攻击进行训练，但可以检测其他未知攻击。。
-   2. 特征集的提出：利用交通和车辆领域的知识，提出了一个有效表示正常驾驶行为的特征集。该特征集可以与不同的基于机器学习的分类器（如SVM、随机森林和决策树）结合使用，并在检测已知和未知攻击方面取得了高准确性。
-   3. 新的攻击建模范式：提出了一种新的网络攻击建模范式，能够准确表示车辆级攻击行为，而无需构建复杂的攻击流程。与原始的MSF攻击模型相比，所提出的方法需要更少的计算资源，并且只需要GPS接收器的信息。
-
-   实验步骤：
-   1. 攻击建模：介绍了两种攻击（ETA攻击和MSF攻击）的建模方法，这两种攻击被认为是“复杂”的，因为它们考虑了车辆运动学的物理边界、车辆运动的一致性和交通流属性，大大增加了检测的难度。
-      两种攻击模式：ETA攻击、MSF攻击
-      - ETA攻击生成不遵守汽车跟随规则的伪造轨迹
-      - MSF攻击生成围绕车道中心波动并逐渐偏离道路的伪造轨迹
-   2. 特征提取器：设计了13个特征来捕捉正常驾驶的各个方面，包括纵向和横向驾驶行为。
-         13个特征：平均加速度（绝对值）、平均航向率（绝对值）、平均车跟随距离差（绝对值）、平均速度、速度标准差、平均加速度、加速度标准差、平均航向率、航向率标准差、车跟随距离差异的平均值、车跟随距离差异的标准差、最大速度、最大加速度
-   3. 异常检测框架：结合特征提取器和基于机器学习的异常分类器，设计了一个用于区分伪造轨迹的框架。使用收集到的ETA攻击轨迹和MSF攻击轨迹来训练异常分类器。
-   4. 数值实验：在V2X应用欺骗平台（VASP）中建立了一个带有信号化交叉口的高速公路段，以生成攻击轨迹。使用VASP平台中的68种典型V2X攻击（包括基于运动学值的攻击和针对V2X应用的攻击）来测试所提出的模型的泛化性。
-   5. 未来研究方向：计划在未来的工作中添加两种基线模型进行比较，包括基于合理性检查的模型和基于神经网络的模型。此外，还将探讨神经网络模型是否能够检测未知攻击，因为训练数据中提取的特征（即已知攻击）可能无法代表未知攻击中的异常模式。
    ```
 - **Multi-Sensors Space and Time Dimension Based Intrusion Detection System in Automated Vehicles.[[paper]](https://ieeexplore.ieee.org/document/10224320)**
 车辆数据集链接：[[数据集]](https://medium.com/udacity/open-sourcing-223gb-of-mountain-view-driving-data-f6b5593fbfa5)
@@ -290,8 +165,6 @@ Paper reading list in Cooperative perception. This repository will keep updating
    - 设计了一个基于多目标的算法MaOEA-ID，通过内部和外部种群知识的进化融合，大大提高了算法性能。
    - 通过使用真实世界的车辆网络数据集进行的广泛模拟实验验证了所提出的模型和算法，证明了该方法在车辆网络入侵检测方面的优越性能。
    ```
-
-😊😊(看过忘了)
 - **A stacked ensemble learning IDS model forSoftware-defined VANET.[[paper]](https://arxiv.org/abs/2312.04956)**
    ```
    注：2023年12月14日发表 
@@ -316,6 +189,112 @@ Paper reading list in Cooperative perception. This repository will keep updating
       - 特征选择：使用SelectKBest类和卡方统计测试选择最佳特征。
       - 超参数优化：使用贝叶斯优化与高斯过程进行参数优化。
       - 集成堆叠分类器：使用随机森林（RF）和XGBoost作为基础学习器，逻辑回归（LR）作为最终学习器。
+   ```
+
+### MBDS
+- **薛宏伟.面向智能网联汽车的网络异常行为检测方法研究[D].东南大学,2021.DOI:10.27014/d.cnki.gdnau.2021.003115.[[paper]](https://kns.cnki.net/kcms2/article/abstract?v=yXT3uqWUX_-EDYP8LlA_mRorFVKfBHHJrzWvS9fHYuoFr84ZLVzX7GlDsnYFC0mT0mGXCXuae48zN2SBO9kC2ZwNpRwGz-dAk7if5vbghPdk39wRBcz_pAeQcMYTFXItFc9MiH0jSfrNKzjqucus7Q==&uniplatform=NZKPT&language=CHS)[[笔记]](<../../../车联网安全/detection/V2X Misbehavior Detection/面向智能网联汽车的网络异常行为检测方法研究note.md>)**
+   ```
+   注：2021年  
+   核心内容：
+   1. 异常行为检测方法：
+      - 基于密码学的方法
+      - 基于异常行为检测的方法，包括以节点为中心（Node-centric MDS）和以数据为中心（Data-centric MDS）的检测。
+   2. 智能网联汽车网络安全模型建立：
+      - 交通仿真模型
+      - 车联网通信模块，包括通信数据格式的重新定义，考虑了位置、速度、加速度和航向的误差。
+      - 网络攻击模式，包括单一攻击（拒绝服务、女巫攻击、重放攻击）和复合性攻击（DDS攻击）。
+      - 智能网联汽车网络安全联合仿真，使用Veins和OMNeT++进行仿真。
+   3. 基于Stacking集成学习的车联网异常行为检测方法：
+      - 异常行为检测架构
+      - 数据清洗和特征值筛选
+      - 模型训练与测试
+      - 使用常用评价指标（Accuracy、Precision、Recall、F1-Score）进行评估。
+   4. 基于GAN网络的车联网异常行为检测方法：
+      - 利用生成对抗式网络（GAN）学习Replay攻击的潜在分布，生成大量带标签的Replay攻击数据。
+      - 通过GAN网络生成对抗样本，解决数据集中正常行为样本和异常行为样本数量不平衡的问题。
+      - 性能比较，提出的方法在准确率、精确率和F1-Score上有所提升。
+   5. 智能网联汽车的网络异常行为检测系统设计及实现：
+      - 系统整体架构
+      - 车载平台设计，包括在线和离线工作模式。
+      - 云控平台设计，基于HTTP协议，实现全局网络状态分析。
+      - 可视化模块设计，包括web界面和SUMO界面。
+   6. 总结与展望：
+      - 本文研究了智能网联汽车的网络攻击和异常行为检测方法。
+      - 提出了基于Stacking集成学习和GAN网络的检测方法。
+      - 未来研究可以扩展更多攻击方式，优化算法检测效果，并尝试引入深度卷积神经网络和更换损失函数以提升模型性能。
+   ```
+- **A. Boualouache and T. Engel, "A Survey on Machine Learning-Based Misbehavior Detection Systems for 5G and Beyond Vehicular Networks," in IEEE Communications Surveys & Tutorials, vol. 25, no. 2, pp. 1128-1172, Secondquarter 2023, doi: 10.1109/COMST.2023.3236448.[[paper]](https://ieeexplore.ieee.org/document/10015746)**
+   ```
+   注：IEEE Communications Surveys & Tutorials 2023
+      这是一篇综述
+   - 目前车联网MBDS攻击检测系统方案：
+   1. 传统机器学习
+   - 监督学习中的分类问题：朴素贝叶斯（NB）、Logistic回归（LR）、支持向量机（SVM）、k最近邻（KNN）、随机森林（RF）、人工神经网络（ANN）、额外树（ET）、AdaBoost、决策树桩、集成学习（bagging, boosting, stacking）、XGBoost、光梯度增强机（LGBM）
+   - 无监督学习：异常检测、聚类和降维。常见的聚类算法是k均值模型、层次模型和高斯混合模型。常见的异常检测算法有椭圆包络算法、隔离森林算法、单类SVM算法。
+   2. 深度学习
+   - 监督学习：卷积神经网络（CNN）、递归神经网络（RNN）
+   3. 高级机器学习概念
+   - 联邦学习、强化学习、迁移学习、半监督学习、生成式对抗性网络（GAN）、线上学习
+   ```
+- **F. Dutra, K. Bonfim, C. Siqueira, L. A. Pereira, A. Santos and R. I. Meneguette, "DISMISS-BSM: an Architecture for Detecting Position Spoofing in Basic Safety Messages," GLOBECOM 2022 - 2022 IEEE Global Communications Conference, Rio de Janeiro, Brazil, 2022, pp. 3381-3386, doi: 10.1109/GLOBECOM48099.2022.10001122. [[paper]](https://ieeexplore.ieee.org/document/10001122)[[code]](https://github.com/c2dc/dismiss-bsm-globecom2022)**
+![Alt text](./images/image1.png)
+   ```
+   注：GLOBECOM.2022（MBDS检测）
+   ```
+- **K. A. Bonfim, F. D. S. Dutra, C. E. T. Siqueira, R. I. Meneguette, A. L. Dos Santos and L. A. P. Júnior, "Federated Learning-based Architecture for Detecting Position Spoofing in Basic Safety Messages," 2023 IEEE 97th Vehicular Technology Conference (VTC2023-Spring), Florence, Italy, 2023, pp. 1-5, doi: 10.1109/VTC2023-Spring57618.2023.10199980.[[paper]](https://ieeexplore.ieee.org/document/10199980)[[code]](https://github.com/c2dc/fl-bsm-vtc2023)**
+![Alt text](./images/image.png)
+   ```
+   注：VTC2023-Spring（MBDS检测）
+   ```
+- **Misbehavior detection in intelligent transportation systems based on federated learning.
+[[paper]](https://www.sciencedirect.com/science/article/pii/S2542660524000696)[[code]](https://github.com/Enrique-Marmol/Decentralized_Misbehavior_Detection_based_on_FL_for_Intelligent_Transportation_Systems)[[笔记]](<../../../车联网安全/detection/V2X Misbehavior Detection/2024_3区_基于联邦学习的智能交通系统中的不当行为检测.docx>)**
+   ```
+   注：2024年3区                                                     
+   文章的创新点：
+   1. 联邦学习的应用：文章提出了一种基于联邦学习的协作学习方法，用于车辆不当行为的检测。这种方法允许车辆在不共享其数据的情况下，通过本地训练更新全局模型，从而解决了传统集中式机器学习（ML）方法可能带来的隐私问题和高延迟问题。
+   2. 数据集的重新平衡：文章使用了VeReMi数据集，并应用了SMOTE-Tomek技术来重新平衡数据集，以解决数据集中的类别不平衡问题。这种方法结合了过采样和欠采样，以确保每个类别的样本数量相对均衡，从而提高模型的泛化能力。
+   3. 多层感知器（MLP）的优化：文章使用了优化的多层感知器（MLP）作为ML模型，并结合了FedAvg和Fed+两种聚合函数来评估模型性能。Fed+方法特别适用于处理非独立同分布（non-iid）的数据，这在实际的车辆通信场景中很常见。
+   4. 模型性能评估：文章不仅使用了传统的准确率（accuracy）、召回率（recall）、精确率（precision）和F1分数等指标，还引入了Matthew相关系数（MCC）和Cohen's Kappa Score（CKS）来更全面地评估模型性能，特别是在类别不平衡的情况下。
+   5. 同时，FL数据集划分通过id进行划分，比随机将数据集人为划分为多个数据集更加符合真实场景。
+   ```
+- **An Enhanced Model for Machine Learning-Based DoS Detection in Vehicular Networks.
+[[paper]](https://ieeexplore.ieee.org/abstract/document/10186390)[[code]](https://github.com/ercansec/AttackDetectionMachineLearning)**
+   ```
+   注：2023年会议IFIP                                                     
+   文章的创新点：
+   1. 提出了一个新的机器学习模型检测车辆网络中的拒绝服务（DoS）攻击（数据集为VeReMi Extension）。
+   2. 引入了适合车辆网络环境和DoS攻击的特征选择，包括发送者和接收者之间的相对位置、速度、加速度、航向等。
+   3. 实现了数据采样方法，包括过采样和欠采样，以解决数据集不平衡问题，从而提高分类性能。
+   4. 使用了集成学习（Ensemble Learning）技术，结合了提升（Boosting）、装袋（Bagging）和堆叠（Stacking）方法，以提高入侵检测系统（IDS）的性能。
+   ```
+- **WIP: Modeling and Detecting Falsified Vehicle Trajectories Under Data Spoofing Attacks.[[paper]](https://www.ndss-symposium.org/wp-content/uploads/vehiclesec2024-35-paper.pdf)**
+   ```
+   注：2024
+   攻击类型：
+   1. 已知攻击：
+   - ETA攻击：这种攻击通过发送伪造的轨迹信息，使得车辆的预计到达时间（ETA）比实际更长，从而影响交通控制系统的决策。文中提出了一个基于优化的模型来生成ETA攻击轨迹，考虑车辆动力学和邻近车辆的位置。
+   - MSF攻击：这种攻击模拟了对多传感器融合（MSF）系统的欺骗，通过在GPS信号中添加偏差来误导车辆的定位和导航。文中提出了一种创新的建模范式来模仿MSF攻击行为，生成具有类似横向偏差模式的伪造轨迹。
+   2. 未知攻击：
+   VASP（V2X Application Spoofing Platform）平台中的68种典型V2X攻击。
+
+   总结：
+   本文提出了一种通用的异常检测模型，用于识别连接车辆（CV）和连接与自动化车辆（CAV）技术中的异常轨迹。通过模拟两种代表性的已知攻击行为，提出了一个基于交通和车辆领域知识的驾驶特征提取的异常检测框架。该框架结合了特征提取器和使用已知攻击轨迹训练的异常分类器，能够应用于识别由各种攻击生成的伪造轨迹。所提出的模型在检测已知和未知攻击的伪造攻击轨迹方面具有高准确性。
+
+   创新点：
+   1. 通用检测框架：提出了一个结合特征提取器和分类器的通用检测框架，可以针对不同的驾驶场景（如高速公路和信号化交叉口）进行定制，检测框架使用两种已知攻击进行训练，但可以检测其他未知攻击。。
+   2. 特征集的提出：利用交通和车辆领域的知识，提出了一个有效表示正常驾驶行为的特征集。该特征集可以与不同的基于机器学习的分类器（如SVM、随机森林和决策树）结合使用，并在检测已知和未知攻击方面取得了高准确性。
+   3. 新的攻击建模范式：提出了一种新的网络攻击建模范式，能够准确表示车辆级攻击行为，而无需构建复杂的攻击流程。与原始的MSF攻击模型相比，所提出的方法需要更少的计算资源，并且只需要GPS接收器的信息。
+
+   实验步骤：
+   1. 攻击建模：介绍了两种攻击（ETA攻击和MSF攻击）的建模方法，这两种攻击被认为是“复杂”的，因为它们考虑了车辆运动学的物理边界、车辆运动的一致性和交通流属性，大大增加了检测的难度。
+      两种攻击模式：ETA攻击、MSF攻击
+      - ETA攻击生成不遵守汽车跟随规则的伪造轨迹
+      - MSF攻击生成围绕车道中心波动并逐渐偏离道路的伪造轨迹
+   2. 特征提取器：设计了13个特征来捕捉正常驾驶的各个方面，包括纵向和横向驾驶行为。
+         13个特征：平均加速度（绝对值）、平均航向率（绝对值）、平均车跟随距离差（绝对值）、平均速度、速度标准差、平均加速度、加速度标准差、平均航向率、航向率标准差、车跟随距离差异的平均值、车跟随距离差异的标准差、最大速度、最大加速度
+   3. 异常检测框架：结合特征提取器和基于机器学习的异常分类器，设计了一个用于区分伪造轨迹的框架。使用收集到的ETA攻击轨迹和MSF攻击轨迹来训练异常分类器。
+   4. 数值实验：在V2X应用欺骗平台（VASP）中建立了一个带有信号化交叉口的高速公路段，以生成攻击轨迹。使用VASP平台中的68种典型V2X攻击（包括基于运动学值的攻击和针对V2X应用的攻击）来测试所提出的模型的泛化性。
+   5. 未来研究方向：计划在未来的工作中添加两种基线模型进行比较，包括基于合理性检查的模型和基于神经网络的模型。此外，还将探讨神经网络模型是否能够检测未知攻击，因为训练数据中提取的特征（即已知攻击）可能无法代表未知攻击中的异常模式。
    ```
 - **Federated Learning for V2X Misbehavior Detection System in 5G Edge Networks.[[paper]](https://dl.acm.org/doi/10.1145/3616388.3617533)**
    ```
@@ -398,3 +377,33 @@ Paper reading list in Cooperative perception. This repository will keep updating
       - 在边缘/云服务器上训练RL模型，假设其计算资源优于RSU，而在RSU级别执行检测。
    ```
 
+## 其他
+- **To Tolerate or To Impute Missing Values in V2X Communications Data?[[paper]](https://ieeexplore.ieee.org/document/9608954)**.
+   ```
+   注：IEEE Internet of Things Journal 一区 2022                                                    
+   总结:
+      本文探讨了在车联网（VANETs）中检测恶意行为时如何处理缺失值（接收到的数据可能由于各种原因而包含缺失值，诸如传感器读数中的错误、同步、传感器故障、通信故障和恶意攻击）的问题。作者提出了两种新的方法来处理不完整的V2X通信数据中的缺失值：一种是基于协作聚类的插补方法（COLI），另一种是基于随机子空间选择和Dempster-Shafer融合的缺失容忍方法（MTE-RD）。通过与现有的缺失值处理方法进行比较，作者开发了一个多因素截断框架（INSERT），以在V2X通信数据中系统地引入不同比例、机制和分布的缺失值，从而创建了一个全面的基准数据集。实验结果表明，MTE-RD方法在准确性和F-measure方面显著优于其他处理方法。
+   创新点
+   1. 提出了一种新的基于协作聚类的缺失值插补方法（COLI），这是首次开发协作聚类框架来插补缺失值。
+   2. 提出了一种新的缺失容忍集成方法（MTE-RD），它使用随机子空间选择来形成特征子集，并训练个体分类器，然后通过Dempster-Shafer融合模块结合它们的输出。
+   3. 开发了一个多因素截断框架（INSERT），用于在V2X通信数据中系统地引入缺失值，以模拟实际不完整的通信数据。
+   ```
+
+- **Proof of Travel for Trust-Based Data Validation in V2I Communication.[[paper]](https://ieeexplore.ieee.org/document/10017297)**
+   ```
+   注：IEEE Internet of Things Journal 一区 2023                                                    
+   创新点：
+   1. 提出了一种名为Proof of Travel (POT)的新型V2I通信协议，该协议利用路边基础设施支持，通过验证车辆的空间移动来确定每辆连接车辆的声誉。
+   2. 设计了一种基于POT的投票游戏（PPV算法），用于增强现有的多数投票算法（如CPV），以验证V2I报告的交通事件。
+   3. 使用博弈论框架证明了在采用PPV算法时，所有车辆选择作弊不是一个纯纳什均衡（NE），因为理性的对手会因为POT带来的额外成本而失去进行恶意行为的兴趣。
+   4. 通过仿真实验表明，PPV算法能够容忍更高比例的恶意车辆，并比基准CPV算法产生更高的吞吐量。
+   5. 提出了一种长期和短期激励设计，以鼓励车辆分享V2I数据，并在V2X生态系统中建立信任。
+   实验步骤：
+   1. 实验环境搭建：在V2X仿真运行时基础设施（VSimRTI）中实现POT协议和投票算法，并在怀俄明州的I-80州际公路上进行车辆仿真。
+   2. 参数设置：根据实际的交通条件和V2X部署情况，设置仿真参数，包括车辆密度、RSU数量、VVMT阈值等。
+   3. 安全性评估：通过比较RSU确认错误事件或未能报告实际发生事件的次数，来评估CPV和PPV算法对恶意报告的脆弱性。
+   4. 性能评估：测量RSU运行投票算法的吞吐量，即每分钟正确事件的数量，并记录RSU确认事件所需的时间（延迟）。
+   5. VVMT设计影响分析：研究不同VVMT实现（线性和逻辑形式）对车辆声誉的影响，并调整参数以控制车辆获得声誉的难度和速度。
+   6. 安全性与性能权衡：在不同的交通密度和V2I数据关键性级别下，评估PPV算法在确保事件正确性和及时响应之间的权衡。
+   7. 实验结果分析：根据仿真结果，分析PPV算法在不同参数设置下的性能，并与CPV算法进行比较。
+   ```
