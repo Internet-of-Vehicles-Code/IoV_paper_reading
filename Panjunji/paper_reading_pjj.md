@@ -1,5 +1,5 @@
 # Paper-Reading
- This project aims to collect relevant papers of Rate Splitting Multiple Access. 111
+ This project aims to collect relevant papers of Rate Splitting Multiple Access. 
 
 ## 综述文章
 - **Mao Y, Clerckx B, Li V O K. Rate-splitting multiple access for downlink communication systems: Bridging, generalizing, and outperforming SDMA and NOMA[J]. EURASIP journal on wireless communications and networking, 2018, 2018: 1-54.[[link]](https://link.springer.com/article/10.1186/s13638-018-1104-7)[[code]](https://github.com/YijieLinaMao/RSMA)**
