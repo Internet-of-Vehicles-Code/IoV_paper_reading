@@ -4,43 +4,118 @@ Paper reading list in Cooperative perception. This repository will keep updating
   - [IDS](#ids)
   - [MBDS](#mbds)
 - [其他](#其他)
-<<<<<<< HEAD
-## 攻击检测
-### IDS
-- **M. Fu, P. Wang, M. Liu, Z. Zhang and X. Zhou, "IoV-BERT-IDS: Hybrid Network Intrusion Detection System in IoV Using Large Language Models," in IEEE Transactions on Vehicular Technology, doi: 10.1109/TVT.2024.3402366.[[paper]](https://ieeexplore.ieee.org/abstract/document/10533857)**
-![](./images/image-2.png)
-![](./images/image-3.jpg)
-   ```
-   注：2024年2区-IEEE Transactions on Vehicular Technology
-   模型：bert
-   数据集：CICIDS、BoT-IoT
-   ```
-- **GPS-IDS: An Anomaly-based GPS Spoofing Attack Detection Framework for Autonomous Vehicles.[[paper]](https://arxiv.org/pdf/2405.08359)**
-   ```
-   注：2024年-IEEE TRANSACTIONS ON DEPENDABLE AND SECURE COMPUTING
-   ```
-- **Q. Lai et al., "Improved Transformer-Based Privacy-Preserving Architecture for Intrusion Detection in Secure V2X Communications," in IEEE Transactions on Consumer Electronics, vol. 70, no. 1, pp. 1810-1820, Feb. 2024, doi: 10.1109/TCE.2023.3324081.[[paper]](https://ieeexplore.ieee.org/document/10283969)**
-   ```
-   注：2023年2区-IEEE Transactions on Consumer Electronics
-   联邦学习，transformer，低检测率提高，边缘云，8个机器学习对比模型（其中包括5个深度学习），两个公共IDS数据集
-   ```
-=======
 - [数据集](#攻击检测数据集)
+- [深度学习Transformer模型](#深度学习transformer模型)
 
 ## 攻击检测
 ### IDS
+- **H. Wang, X. Di, Y. Wang, B. Ren, G. Gao and J. Deng, "An Intelligent Digital Twin Method Based on Spatio-Temporal Feature Fusion for IoT Attack Behavior Identification," in IEEE Journal on Selected Areas in Communications, vol. 41, no. 11, pp. 3561-3572, Nov. 2023, doi: 10.1109/JSAC.2023.3310091.[[paper]](https://ieeexplore.ieee.org/abstract/document/10234710)**
+   ```
+   期刊：2023 IEEE Journal on Selected Areas in Communications
+   贡献：
+   1. 提出了一种融合时空特征的模型来识别物联网攻击行为。利用改进的卷积神经网络挖掘网络交通空间特征，并采用增强的BiLSTM方法分析时间特征。利用特征融合的注意机制，同时对特征挖掘模块进行并行挖掘和训练。
+   2. 提出了一种基于信息增益的有效特征选择方案。结合数据预处理和再训练策略来计算特征的重要性，过滤有价值的特征，并降低数据集的维数。
+   3. 采用多相关分析（MCA）算法分析了网络流量属性的一个子集，该算法将网络流量转换为三角形区域地图（TAM）和三色地图（RGB）进行时空特征提取。
+   4. 利用数字孪生技术创建了攻击行为检测模型的数字表示，并在物联网数字双模拟环境中进行了实验，模型参数在训练后实时与物理环境同步。
+   ```
+![](./images/image25.jpg)
+![](./images/image26.jpg)
+- **Digital Twin and federated learning enabled cyberthreat detection system for IoT networks[[paper]](https://www.sciencedirect.com/science/article/pii/S0167739X24003868?ref=pdf_download&fr=RR-2&rr=8bac7c079ec02ef0)**
+   ```
+   期刊：2024 Future Generation computer Systems
+   ```
+- **Enhancing Network Intrusion Detection: An AutoML Pipeline with Efficient Digital Twin Synchronization[[paper]](https://d197for5662m48.cloudfront.net/documents/publicationstatus/182941/preprint_pdf/96ed6c9fd262da180af798f1f13ed779.pdf)**
 
-- **FlowTransformer: A transformer framework for flow-based network intrusion detection systems[[paper]](https://www.sciencedirect.com/science/article/pii/S095741742303066X)[[code]](https://github.com/liamdm/FlowTransformer)**
+- **Zhang, Jiahao, et al. "On Enhancing Intersection Applications With Misbehavior Detection and Mitigation." The 2024 IEEE 100th Vehicular Technology Conference (VTC2024-Fall). 2024.[[paper]](https://hal.science/hal-04672473v1/file/MBDImpact_final_version.pdf)**
+
+- **Wang, Shaoqiang, et al. "A Lightweight Intrusion Detection System for Vehicular Networks Based on an Improved ViT Model." IEEE Access (2024). [[paper]](https://ieeexplore.ieee.org/abstract/document/10638639)**
+
+- **J. Gao, Y. Lu, Y. He, M. Fan, D. Han and Y. Qiao, "Tokenization Representation and Deep Learning based Intrusion Detection in Internet of Vehicles," in IEEE Internet of Things Journal, doi: 10.1109/JIOT.2024.3441763.[[paper]](https://ieeexplore.ieee.org/abstract/document/10633284)**
+   ```
+   期刊：2024 IEEE Internet of Things Journal
+   贡献：
+   1. 提出了一种基于标记化表示的入侵检测方法和一种具有注意机制的CNN-BiLSTM方法。该方法消除了特征提取中对专家知识的需要，在分类阶段达到了较高的精度，有效地检测了车内和车间网络场景中各种类型的网络攻击。
+   2. 在特征提取方面，引入了一种标记化表示方法。该方法首先将原始流量转换为十六进制（十六进制）字节序列，然后通过自然语言处理技术进行标记化，以编码离散单元。它可以直接从原始流量中提取序列模式，同时保留更完整的信息，从而提高系统的泛化性。
+   3. 为了进行分类，在CNN和BiLSTM架构中加入了一种注意机制。该方法能够捕获顺序模式，便于对关键信息的关注，从而提高了入侵检测的准确性。
+   4. 它利用两个公开的数据集，即汽车攻击数据集和计算机网络攻击数据集2023数据集，在二进制和多类分类任务中评估了该方法的性能。实验结果表明，与现有的方法相比，其性能有所提高。
+   ```
+   ![](./images/image20.jpg)
+   ![](./images/image22.jpg)
+   ![](./images/image23.jpg)
+   ![](./images/image24.jpg)
+   ![](./images/image21.jpg)
+- **O. D. Okey, D. C. Melgarejo, M. Saadi, R. L. Rosa, J. H. Kleinschmidt and D. Z. Rodríguez, "Transfer Learning Approach to IDS on Cloud IoT Devices Using Optimized CNN," in IEEE Access, vol. 11, pp. 1023-1038, 2023, doi: 10.1109/ACCESS.2022.3233775.[[paper]](https://ieeexplore.ieee.org/document/10004922)**
+   ```
+   期刊：2023 IEEE Access
+   贡献：
+   1. 提出了一种基于CNN架构的高效轻量级入侵检测系统，利用传输学习技术检测广泛的CoT攻击。
+   2. 为了使输入数据适合于CNN体系结构，开发了一种将数值表格数据转换为图像表示的方法。
+   3. 提出了一种能够在云物联网环境下运行的跨平台IDS,该模型通过规则化降低了训练损失和验证损失。
+   4. 使用BO-TPE超级参数优化，以确定最佳参数，以训练拟议的模型。
+   ```
+   ![](./images/image17.jpg)
+- **S. Wang, Y. Wang, B. Zheng, J. Cheng, Y. Su and Y. Dai, "Intrusion Detection System for Vehicular Networks Based on MobileNetV3," in IEEE Access, doi: 10.1109/ACCESS.2024.3437416.[[paper]](https://ieeexplore.ieee.org/document/10621008)**
+   ```
+   期刊：2024 IEEE Access
+   贡献：
+   1. 我们提出了一种基于孤立森林算法的异常检测方法和一种利用随机森林模型的特征选择技术，这些方法用于从数据集中消除无关的异常值，并识别与车辆入侵检测相关的特征，从而提高预测性能。
+   2. 设计了一种新的空间特征提取架构，通过在训练 MobileNetV3 模型之前从数据集中提取空间特征来提高模型的检测效率。
+   3. 对分区数据集进行了实验评估，与其他方法相比，我们的方法在准确度和F1评分方面取得了优越的结果。
+
+   ```
+   ![](./images/image14.jpg)
+   ![](./images/image18.jpg)
+- **R. Ben Said, Z. Sabir and I. Askerzade, "CNN-BiLSTM: A Hybrid Deep Learning Approach for Network Intrusion Detection System in Software-Defined Networking With Hybrid Feature Selection," in IEEE Access, vol. 11, pp. 138732-138747, 2023, doi: 10.1109/ACCESS.2023.3340142.[[paper]](https://ieeexplore.ieee.org/document/10347226)**
+   ```
+   期刊：2023 IEEE Access
+   CNN-BiLSTM
+   贡献：
+   1. 我们提出了一种方法，该方法包括一个混合模型，该模型将卷积神经网络(CNN)与双向长短期记忆(BiLSTM)相结合。我们在训练模型中使用了L2正则化和dropout(0.5)技术。我们的混合CNN-BiLSTM模型实现了很高的分类性能。
+   2. 我们进行了大量实验，以验证提出的混合模型在多类和二元分类中的性能。此外，我们使用随机过采样平衡数据集，然后使用随机森林分类器和递归特征消除算法选择高度重要的特征，以便提出的模型可以训练这些特征以获得高性能。每个实验都使用InSDN数据集进行验证。
+   3. 采用两个不同的基准数据集:NSL-KDD和UNSW-NB15验证了拟议模型的效率。
+   4. 使用一组包括准确性、召回率、F1分数、精确度和训练时间等指标来测试所建议的深度学习算法的有效性和性能。结果表明，我们的模型在大多数评估指标上优于CNN、AlexNet、LeNet5和CNN-LSTM模型。
+   ```
+   ![](./images/image15.jpg)
+   ![](./images/image16.jpg)
+
+- **enhancing intrusion detection in internet of  vehicles through federated learning[[paper]](https://arxiv.org/abs/2311.13800)[[code]](https://github.com/abby1712/Federated_Learning_IDS_On_IOV)**
+   ```
+   IDS + 联邦学习
+   ```
+   ![](./images/image12.jpg)
+   ![](./images/image13.jpg)
+- **FlowTransformer: A transformer framework for flow-based network intrusion detection systems[[paper]](https://www.sciencedirect.com/science/article/pii/S095741742303066X)[[code]](https://github.com/liamdm/FlowTransformer)[[dataset]](https://staff.itee.uq.edu.au/marius/NIDS_datasets/)**
    ```
    注：2024年1q——Expert Systems With Applications
    本文提出了FlowTransformer框架，通过支持输入编码、变压器模型和分类头等关键组件的有效交换，允许对基于变压器的NIDS进行综合评估。
    传统的变压器最初使用一堆编码器和一堆解码器，这一方法对序列到翻译等任务的排序特别有意义。但对于像NIDS分类这样的非顺序任务而言可以移除解码层，并用分类头取代，从而创建一个完全由编码块组成的模型。
    数据集：MQTT-IoT-IDS2020、UNSW-NB15
+   贡献：
+   本文的主要贡献是，我们提出了Flow-Transformer框架，解决与系统地实现基于变换器的 NIDS相关联的挑战，包括数据集的摄取和处理输入编码的选择、模型超分量、分类头和对序列数据集的评价，并提供该实现供公众使用。它使研究人员能够灵活地选择最合适的超参数和架构配置，以符合NIDS应用程序的需求。FlowTransformer提供了一种系统化的评估方法，用于评估不同Transformer模型在NIDS中的性能它考虑了模型组件、超参数配置以及它们对模型大小、速度和准确性的影响，从而可以对NIDS用例中的各种Transformer架构进行全面分析。我们的分析突出了网络入侵检测任务中模型大小、性能和推理时间之间的权衡，并证明使用合理的Transformer组件而不是其他常见方法可以减少50%以上的模型大小和推理时间，同时保持相同的准确性。最后，通过这种比较分析，我们推荐一个整体变压器架构，我们认为这个架构代表了组件的最佳选择，作为未来发展的起点基于变压器的NIDS研究。
    ```
    ![](./images/image6.jpg)
    ![](./images/image7.jpg)
    ![](./images/image8.jpg)
    ![](./images/image9.jpg)
+
+- **IDS-INT: Intrusion detection system using transformer-based transfer learning for imbalanced network traffic[[paper]](https://www.sciencedirect.com/science/article/pii/S2352864823000640)**
+   ```
+   注：2024年2区
+   主要研究了一种基于Transformer的迁移学习方法，用于检测网络流量中的入侵行为，特别是在网络流量不平衡的情况下。
+   创新点：
+   - Transformer-based Transfer Learning: 论文提出了一种基于Transformer的迁移学习方法，用于学习网络特征表示和处理不平衡数据。这种方法利用了Transformer模型的多头注意力机制来捕捉网络流量中的复杂特征和模式。
+   - Semantic Feature Representation: 通过从网络交互描述中提取的详细信息（如网络节点、攻击类型、引用、主机信息等），论文方法能够学习具有语义锚点的详细特征表示。
+   - SMOTE for Imbalance Data: 为了解决网络流量中正常流量与异常流量的不平衡问题，论文采用了合成少数类过采样技术（SMOTE），以平衡异常流量并检测少数攻击。
+   - CNN-LSTM Model for Deep Feature Extraction: 论文设计了一种卷积神经网络（CNN）模型来从平衡的网络流量中提取深度特征，并进一步开发了CNN与长短期记忆网络（LSTM）的混合模型，用于检测不同类型的攻击。
+   - Explainable AI Approach: 为了解释所提出方法并建立一个可信的模型，论文实施了一种可解释的人工智能方法，通过分析模型输入特征与模型决策之间的关系，提供了对模型行为的洞察。
+   实验部分：
+   - Datasets: 论文使用了三个标准数据集进行实验测试：UNSW-NB15、CIC-IDS2017和NSL-KDD。这些数据集包含了不同类型的网络攻击和正常流量的样本。
+   - Performance Metrics: 为了全面评估所提出方法的有效性，论文使用了多个性能指标，包括精确度（Precision）、召回率（Recall）、F1分数和准确率（Accuracy）。
+   - Baseline Comparisons: 论文将IDS-INT与其他几种混合深度学习模型（如CNN-RNN和CNN-GRU）进行了比较，以展示其在不同数据子集上的性能。
+   - Results Analysis: 实验结果显示，IDS-INT在所有性能指标上均优于基线方法，特别是在基本数据子集上，IDS-INT达到了99%的精确度、100%的召回率、99%的F1分数和99.21%的准确率。
+   - Model Interpretation: 论文使用了可解释的AI技术（如LIME和SHAP）来分析模型输入特征对IDS-INT输出的影响，这有助于理解模型的决策过程，并识别对检测结果影响最大的特征。
+   - Feature Importance: 通过可视化和分析特征的重要性，论文展示了哪些特征对网络流量的入侵检测最为关键，这有助于进一步优化模型的性能。
+   ```
 
 - **J. Cui et al., "LH-IDS: Lightweight Hybrid Intrusion Detection System Based on Differential Privacy in VANETs," in IEEE Transactions on Mobile Computing, doi: 10.1109/TMC.2024.3407709.[[paper]](https://ieeexplore.ieee.org/abstract/document/10543091)**
    ```
@@ -53,6 +128,10 @@ Paper reading list in Cooperative perception. This repository will keep updating
       业务检测的第一层OCSVM 1得到检测概率结果Pi，使用f1-score作为评估标准，当概率结果Pi福尔斯低于设定的阈值P时，它被分类为不确定实例。随后，使用更强大的叠加模型来处理这些不确定的实例，产生最终结果，该结果可以是正常的或异常的。当概率结果Pi超过设定的阈值P时，直接得到最终结果，并将其归类为正常。阈值P是一个连续的变量，作者根据实验结果将阈值P设置为0.99。
    - 数据集：
       UNSW-NB15、VeReMi
+   贡献：
+   1. 我们提出了一种基于机器学习和差分隐私的新型轻量级混合IDS，称为LH-IDS。LH-IDS的正常和异常流量检测性能水平非常高。
+   2. 我们使用DP机制来解决数据隐私问题，特别是，我们将Laplacian和Gaussian机制应用于我们的数据集，以获得具有不同隐私预算的DP数据集，而使用LH-IDS来验证这些DP数据集的效用。
+   3. 在 LH-IDS 上进行了详细的实验，实验结果表明，在处理DP数据集时，LH-IDS的性能仅比没有DP机制的数据集低约1%。此外，LH-IDS是轻量级系统，只需要少量CPU和内存开销，这对VANET有利。
    ```
    【LH-IDS的框架】
    ![](./images/image3.jpg)
@@ -69,34 +148,43 @@ Paper reading list in Cooperative perception. This repository will keep updating
    注：2024年2区
    Bi-LSTM + 差分隐私
    考虑了隐私和通信成本
-   数据集：UNSW-NB15（F1:0.9751）、CAN-intrusion-dataset（F1:0.9851）、CIC-IDS-2017（F1:0.9789）   
+   数据集：UNSW-NB15（F1:0.9751）、CAN-intrusion-dataset（F1:0.9851）、CIC-IDS-2017（F1:0.9789） 
+   贡献：
+   1.在车联网入侵检测领域，我们首次提出了带有差分隐私的联邦学习，创新性地提出了一种考虑了隐私保护的驾驶行为分析数据处理算法。目的是在减少通信成本的同时，显著提高模型训练的有效性，同时最大限度地降低客户隐私泄露的风险，并保持模型检测能力的精确度。
+   2. 我们设计了一种新的数据处理算法，用于跨时间和空间维度的用户驾驶行为分析，该算法基于我们的数据同源性原则，从指定时间框架内的目标驾驶员-设备交互中识别出丰富的行为数据，对数据进行分组和归一化，创建一个反映时间的状态矩阵，提高联邦学习模型的准确性和可靠性。此外，我们通过添加注意力机制来改进我们的时间序列检测模型，该机制丰富了行为特征，提高了检测精度。
+   3. 我们使用联邦学习来训练我们提出的模型，减少客户端和中央服务器之间的通信压力。我们使用随机策略机制来选择要训练的客户端，使模型训练更加稳定，具有更好的泛化性能，训练和测试数据集之间的误差较小。我们还使用拉普拉斯噪声机制来对局部模型的权重参数进行扰动，即使黑客获得了权重参数，他们也无法对原始数据进行逆向工程，进一步保护模型的隐私。
+   4. 我们在三个公开可用的数据集上进行了实验和验证，UNSW NB-15，CAN-intrusion-dataset和 CIC-IDS 2017，并将我们的模型与最新的模型进行比较。实验结果表明，我们的模型分别实现了0.9751，0.9851和0.9789的FI值。此外，我们公开发布我们的数据集处理算法和模型实现代码，以减少该领域可重复和有效的模型的稀缺性。
    ```
    ![](./images/image5.jpg)
 - **M. Fu, P. Wang, M. Liu, Z. Zhang and X. Zhou, "IoV-BERT-IDS: Hybrid Network Intrusion Detection System in IoV Using Large Language Models," in IEEE Transactions on Vehicular Technology, doi: 10.1109/TVT.2024.3402366.[[paper]](https://ieeexplore.ieee.org/abstract/document/10533857)**
-![](./images/image-2.png)
    ```
    注：2024年2区t刊-IEEE Transactions on Vehicular Technology
    模型：Bert
    数据集：CICIDS、BoT-IoT
+   贡献：
+   1. 本文介绍了IoV-BERT-IDS，这是一种利用BERT模型的混合网络流量IDS，专为车内和车外网络而设计通过将来自两个网络的原始流量数据表示为十六进制字符串，称为字节句(BS，在II中介绍)，IoV-BERT-IDS可以学习流量的通用表示，并进行微调以分别处理两个网络的入侵检测任务。
+   2. IoV-BERT-IDS提出了一种新的数据预处理方法称为语义提取器。该方法解决了处理具有模糊语义的流量数据的挑战，将其转换为上下文语义流量对。它由两部分组成，如图2所示:单向 SE将未标记的包数据作为 USL进行微调，而双向 SE提取标记的包对作为 BSL进行预训练。
+   3. 本文介绍了两个预训练任务:掩蔽字节词模型(MBWM)和下一个字节句子预测(NBSP)。这些任务旨在从上下文语义中学习双向上下文特征。
+   4. 使用不同的数据集验证模型，包括CICIDS，BoT-IoT ，Car-Hacking以及(IVN-IDS)数据集。实验结果表明，该模型对车载和车载网络具有很高的入侵检测准确性。值得注意的是，该模型在各种不同车辆的车辆网络中具有良好的泛化能力。
    ```
+![](./images/image-2.png)
+![](./images/image19.jpg)
 
->>>>>>> master
 - **S. Almutlaq, A. Derhab, M. M. Hassan and K. Kaur, "Two-Stage Intrusion Detection System in Intelligent Transportation Systems Using Rule Extraction Methods From Deep Neural Networks," in IEEE Transactions on Intelligent Transportation Systems, vol. 24, no. 12, pp. 15687-15701, Dec. 2023, doi: 10.1109/TITS.2022.3202869.[[paper]](https://ieeexplore.ieee.org/document/9882029)**
    ```
    注：2022年1区-IEEE Transactions on Intelligent Transportation Systems
    深度学习中的规则提取（Rule Extraction），深度卷积网络，时间、内存、CPU占用率，四个公共IDS数据集
    ```
-<<<<<<< HEAD
-
-=======
 - **Q. Lai et al., "Improved Transformer-Based Privacy-Preserving Architecture for Intrusion Detection in Secure V2X Communications," in IEEE Transactions on Consumer Electronics, vol. 70, no. 1, pp. 1810-1820, Feb. 2024, doi: 10.1109/TCE.2023.3324081.[[paper]](https://ieeexplore.ieee.org/document/10283969)**
    ```
    注：2023年2区- IEEE Transactions on Consumer Electronics
    联邦学习，transformer，低检测率提高，边缘云，8个机器学习对比模型 其中包括5个深度学习，两个公共IDS数据集
    ```
->>>>>>> master
+   ![](./images/image10.jpg)
+   ![](./images/image11.jpg)
 
 - **L. Yang, A. Moubayed and A. Shami, "MTH-IDS: A Multitiered Hybrid Intrusion Detection System for Internet of Vehicles," in IEEE Internet of Things Journal, vol. 9, no. 1, pp. 616-632, 1 Jan.1, 2022, doi: 10.1109/JIOT.2021.3084796.[[paper]](https://ieeexplore.ieee.org/document/9443234)**
+![](./images/image3.png)
 
 - **L. Yang, A. Shami, G. Stevens and S. de Rusett, "LCCDE: A Decision-Based Ensemble Framework for Intrusion Detection in The Internet of Vehicles," GLOBECOM 2022 - 2022 IEEE Global Communications Conference, Rio de Janeiro, Brazil, 2022, pp. 3545-3550, doi: 10.1109/GLOBECOM48099.2022.10001280.[[paper]](https://ieeexplore.ieee.org/document/10001280)**
 
@@ -141,9 +229,6 @@ Paper reading list in Cooperative perception. This repository will keep updating
          - 带 CNN 的四层 LSTM
 
    ```
-<<<<<<< HEAD
-
-=======
 
 - **K. Agrawal, T. Alladi, A. Agrawal, V. Chamola and A. Benslimane, "NovelADS: A Novel Anomaly Detection System for Intra-Vehicular Networks," in IEEE Transactions on Intelligent Transportation Systems, vol. 23, no. 11, pp. 22596-22606, Nov. 2022, doi: 10.1109/TITS.2022.3146024.[[paper]](https://ieeexplore.ieee.org/document/9706416)[[code]](https://github.com/kushagra-2503/Artificial-Intelligence-Enabled-Security-Provisioning-for-Autonomous-Vehicles)**
    ```
@@ -164,7 +249,6 @@ Paper reading list in Cooperative perception. This repository will keep updating
          - 带 CNN 的四层 LSTM
 
    ```
->>>>>>> master
 - **Edge Computing-enabled Intrusion Detection for C-V2X Networks using Federated Learning.
 [[paper]](https://ieeexplore.ieee.org/document/10001675)[[笔记]](<../../../车联网安全/detection/IDS/Edge Computing-enabled Intrusion Detection for.docx>)**
  ![](./images/image2.jpg)
@@ -280,9 +364,6 @@ Paper reading list in Cooperative perception. This repository will keep updating
       - 集成堆叠分类器：使用随机森林（RF）和XGBoost作为基础学习器，逻辑回归（LR）作为最终学习器。
    ```
 
-<<<<<<< HEAD
-### MBDS
-=======
 - **CANintelliIDS: Detecting In-Vehicle Intrusion Attacks on a Controller Area Network Using CNN and Attention-Based GRU.[[paper]](https://ieeexplore.ieee.org/document/9359538)**
    ```
       注：2021年21区
@@ -300,7 +381,6 @@ Paper reading list in Cooperative perception. This repository will keep updating
    ```
 ### MBDS
 
->>>>>>> master
 - **薛宏伟.面向智能网联汽车的网络异常行为检测方法研究[D].东南大学,2021.DOI:10.27014/d.cnki.gdnau.2021.003115.[[paper]](https://kns.cnki.net/kcms2/article/abstract?v=yXT3uqWUX_-EDYP8LlA_mRorFVKfBHHJrzWvS9fHYuoFr84ZLVzX7GlDsnYFC0mT0mGXCXuae48zN2SBO9kC2ZwNpRwGz-dAk7if5vbghPdk39wRBcz_pAeQcMYTFXItFc9MiH0jSfrNKzjqucus7Q==&uniplatform=NZKPT&language=CHS)[[笔记]](<../../../车联网安全/detection/V2X Misbehavior Detection/面向智能网联汽车的网络异常行为检测方法研究note.md>)**
    ```
    注：2021年  
@@ -332,11 +412,8 @@ Paper reading list in Cooperative perception. This repository will keep updating
       - 提出了基于Stacking集成学习和GAN网络的检测方法。
       - 未来研究可以扩展更多攻击方式，优化算法检测效果，并尝试引入深度卷积神经网络和更换损失函数以提升模型性能。
    ```
-<<<<<<< HEAD
-=======
 
 
->>>>>>> master
 - **A. Boualouache and T. Engel, "A Survey on Machine Learning-Based Misbehavior Detection Systems for 5G and Beyond Vehicular Networks," in IEEE Communications Surveys & Tutorials, vol. 25, no. 2, pp. 1128-1172, Secondquarter 2023, doi: 10.1109/COMST.2023.3236448.[[paper]](https://ieeexplore.ieee.org/document/10015746)**
    ```
    注：IEEE Communications Surveys & Tutorials 2023
@@ -501,21 +578,6 @@ Paper reading list in Cooperative perception. This repository will keep updating
    3. 开发了一个多因素截断框架（INSERT），用于在V2X通信数据中系统地引入缺失值，以模拟实际不完整的通信数据。
    ```
 
-<<<<<<< HEAD
-## 其他
-- **To Tolerate or To Impute Missing Values in V2X Communications Data?[[paper]](https://ieeexplore.ieee.org/document/9608954)**.
-   ```
-   注：IEEE Internet of Things Journal 一区 2022                                                    
-   总结:
-      本文探讨了在车联网（VANETs）中检测恶意行为时如何处理缺失值（接收到的数据可能由于各种原因而包含缺失值，诸如传感器读数中的错误、同步、传感器故障、通信故障和恶意攻击）的问题。作者提出了两种新的方法来处理不完整的V2X通信数据中的缺失值：一种是基于协作聚类的插补方法（COLI），另一种是基于随机子空间选择和Dempster-Shafer融合的缺失容忍方法（MTE-RD）。通过与现有的缺失值处理方法进行比较，作者开发了一个多因素截断框架（INSERT），以在V2X通信数据中系统地引入不同比例、机制和分布的缺失值，从而创建了一个全面的基准数据集。实验结果表明，MTE-RD方法在准确性和F-measure方面显著优于其他处理方法。
-   创新点
-   1. 提出了一种新的基于协作聚类的缺失值插补方法（COLI），这是首次开发协作聚类框架来插补缺失值。
-   2. 提出了一种新的缺失容忍集成方法（MTE-RD），它使用随机子空间选择来形成特征子集，并训练个体分类器，然后通过Dempster-Shafer融合模块结合它们的输出。
-   3. 开发了一个多因素截断框架（INSERT），用于在V2X通信数据中系统地引入缺失值，以模拟实际不完整的通信数据。
-   ```
-
-=======
->>>>>>> master
 - **Proof of Travel for Trust-Based Data Validation in V2I Communication.[[paper]](https://ieeexplore.ieee.org/document/10017297)**
    ```
    注：IEEE Internet of Things Journal 一区 2023                                                    
@@ -534,15 +596,28 @@ Paper reading list in Cooperative perception. This repository will keep updating
    6. 安全性与性能权衡：在不同的交通密度和V2I数据关键性级别下，评估PPV算法在确保事件正确性和及时响应之间的权衡。
    7. 实验结果分析：根据仿真结果，分析PPV算法在不同参数设置下的性能，并与CPV算法进行比较。
    ```
-<<<<<<< HEAD
-=======
 
 ## 攻击检测数据集
-1. **CSE-CIC-IDS2018[[LINK]](https://www.unb.ca/cic/datasets/ids-2018.html)**
+1. **CSE-CIC-IDS2018[[link]](https://www.unb.ca/cic/datasets/ids-2018.html)**
 an NIDS dataset for traditional networks including ‘seven different attack scenarios:Brute-force, Heartbleed, Botnet, DoS, DDoS, Web attacks, and infiltration of the network from inside.
 2. **UNSW-NB15[[paper]](https://ieeexplore.ieee.org/document/7348942)**
 an NIDS dataset for traditional networks featuring ‘a hybrid of real modern normal activities and synthetic contemporary attack behaviours’ with ‘nine types of attacks, namely, Fuzzers, Analysis, Backdoors,DoS, Exploits, Generic, Reconnaissance, Shellcode and Worms.
 3. **KDD Cup99[[link]](http://kdd.ics.uci.edu/databases/kddcup99/kddcup99.html)**
-4. **CSE-CIC-IDS2020**
+4. **CSE-CIC-IDS2020[[link]]() [[paper]](https://www.nature.com/articles/s41597-023-02716-9) [[CrySyS Lab Vehicle Security Research]](https://www.crysys.hu/research/vehicle-security/) [[github]](https://github.com/CrySyS)**
 ![](./images/image-3.jpg)
->>>>>>> master
+5. **CrySyS dataset**
+6. **CICIoT2023[[paper]](https://www.mdpi.com/1424-8220/23/13/5941)[[dataset]](https://www.unb.ca/cic/datasets/iotdataset-2023.html)**
+7. **CICIoV2024[[paper]](https://www.sciencedirect.com/science/article/pii/S2542660524001501)[[dataset]](https://www.unb.ca/cic/datasets/iov-dataset-2024.html)**
+
+## 深度学习Transformer模型
+1. Transformer模型[[paper]](https://arxiv.org/pdf/1706.03762)
+2. BERT_base[[paper]](https://arxiv.org/abs/1810.04805)[[model]](https://github.com/google-research/bert)
+3. DistilBERT[[paper]](https://arxiv.org/abs/1910.01108)
+4. ALBert[[paper]](https://arxiv.org/pdf/1909.11942.pdf)
+5. TinyBERT[[paper]](https://arxiv.org/abs/1909.10351)
+6. MobileBERT[[paper]](https://arxiv.org/abs/2004.02984)
+5. FastBERT[[paper]](https://arxiv.org/abs/2004.02178)
+6. M2-BERT
+------------------------------------------------------------------------------------------------------
+[小白看得懂的BERT原理](https://mp.weixin.qq.com/s/VzYx0x3s_8LrLmovYE2Z8w)
+[使用DistilBERT 蒸馏类 BERT 模型的代码实现](https://mp.weixin.qq.com/s/0c7lXp-3OmLrTpFHWYpkyQ) code[[link]](https://gist.github.com/remi-or/4814577c59f4f38fcc89729ce4ba21e6)
