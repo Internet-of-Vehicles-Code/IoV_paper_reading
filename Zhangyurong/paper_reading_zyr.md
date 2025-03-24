@@ -8,7 +8,56 @@ Paper reading list in Cooperative perception. This repository will keep updating
 
 ## 攻击检测
 ### IDS
+- **I. Ullah, I. Khalil, X. Bai, S. Garg, G. Kaddoum and M. Shamim, "An Ensemble-Based Hybrid Model for the Detection of Attacks in the Internet of Vehicular Things," in IEEE Transactions on Intelligent Transportation Systems, doi: 10.1109/TITS.2025.3547999.[[paper]](https://ieeexplore.ieee.org/abstract/document/10931828)**
+   ```
+   publication: 2025.03.18
+   Datasets: CICIDS2017多分类, UNSWNB2015二分类 (EVN)
+   Models:ensemble(stacking√、bagging、voting) => XGBoost、RF、DT、Gradient Boosting
+   Pre-processing + Feature Engineering: k-means、Z-score、IG、SMOTE
+   有对比实验，对比试验为2016-2021年的有点久远期刊，对比数据为对比论文所给数值
+   ```
 
+- **Mahmoud, M.M.; Youssef, Y.O.; Abdel-Hamid, A.A. XI2S-IDS: An Explainable Intelligent 2-Stage Intrusion Detection System. Future Internet 2025, 17, 25.[[paper]](https://www.mdpi.com/1999-5903/17/1/25)**
+   ```
+   UNSW-NB15+ CICIDS2017
+   两阶段IDS：
+   1. 第一阶段-二分类（正常和攻击）
+   2. 第二阶段-多分类（攻击进行细分）
+   为了增强模型的可解释性，在第一阶段为训练过的二进制模型提供了全局的SHAP解释。
+   SHAP解释包括模型的前20个重要特征柱状图和数据集对模型的影响SHAP plot analysis
+   ```
+   ![Alt text](1738996622902.jpg)
+   ![Alt text](image-1.png)
+
+- **T. Zhang et al., "Hybrid Transfer and Self-Supervised Learning Approaches in Neural Networks for Intelligent Vehicle Intrusion Detection and Analysis," in IEEE Internet of Things Journal, doi: 10.1109/JIOT.2024.3518636. [[paper]](https://ieeexplore.ieee.org/abstract/document/10804111)**
+   ```
+   Intra-vehicle + Car Hacking、ROAD +  Multi-class（已知攻击）、Binary（未标签攻击） + Transformer
+   1. 提出了一个基于transformer的迁移学习入侵检测系统（TIDS）
+   2. 引入了一种基于实例的迁移学习方法来增强TIDS模型的领域适应性
+   3. 在TIDS中集成了一个自监督学习机制，以减少对标记数据的依赖，使模型能够从未标记数据中学习
+   ```
+![Alt text](f37f18fe2eeb23c90fcbcb306541e9e.png)
+
+- **S. Li, Y. Cao, Y. Zhang, T. Liao, F. Yan and H. Lin, "A Cloud Collaborative-based Intrusion Detection and Prevention System for IVN," in IEEE Transactions on Cognitive Communications and Networking, doi: 10.1109/TCCN.2024.3516052.[[paper]](https://ieeexplore.ieee.org/abstract/document/10794682) [[dataset]](https://github.com/yuecao871441562/IVAD)**
+   ```
+   Intra-vehicle + Car Hacking Dataset、Survival Analysis Dataset、Real-world vehicular（IVAD） +  Binary + BERT
+   1. 整合了HCRL的Car Hacking Dataset（CHD）、Survival Analysis Dataset（SAD）以及从真实的车载/模拟环境中收集的数据（IVAD）
+   2. BERT+云服务器
+   3. 将消息ID和有效负载内容等特征转换为合适的输入格式（文本），输出层的激活函数被调整为sigmoid函数（2分类）(BERT的激活函数一般为GELU)
+   4. 使用Encode 2 ID算法对恶意流量进行编码，为每个流量生成唯一的ID，节省存储空间
+   ```
+![Alt text](0b6d55ec54d8eced53a0012d49e866b.png)
+
+- **Y. Yigit, L. Maglaras, W. J. Buchanan, B. Canberk, H. Shin and T. Q. Duong, "AI-Enhanced Digital Twin Framework for Cyber-Resilient 6G Internet-of-Vehicles Networks," in IEEE Internet of Things Journal, doi: 10.1109/JIOT.2024.3455089.[[paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10673900)**
+   ```
+   2024,IEEE INTERNET OF THINGS JOURNAL
+   贡献：
+   1. 我们提出了一个数字孪生辅助智能攻击检测框架，以处理6G车联网环境中的不同攻击，特别是针对RSU的攻击。
+   2. 我们提供了一个在线学习模块，以确保我们的检测机制在网络感知方式下的稳定性能。该模块主要由AutoFS和AutoCM组件组成，用于为网络找到最佳的特征选择和分类技术。
+   3. 我们引入了一个特征工程模块，该模块利用ssAE算法来降低数据维度。我们采用的功能工程和在线学习模块的网络双层次的建议框架划分系统的整体计算负荷。·我们提出了一种自动化的邻居RSU关系，以在邻居RSU之间共享车辆的恶意IP地址。
+   ```
+   ![](./images/image10.jpg)
+   ![](./images/image11.jpg)
 - **FlowTransformer: A transformer framework for flow-based network intrusion detection systems[[paper]](https://www.sciencedirect.com/science/article/pii/S095741742303066X)[[code]](https://github.com/liamdm/FlowTransformer)**
    ```
    注：2024年1q——Expert Systems With Applications
